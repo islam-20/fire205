@@ -304,11 +304,11 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(2060957526) then  
-var = 'مبرمج السورس'
+var = 'مبرمج جميع السورسات'
 elseif tonumber(user_id) == tonumber(20) then
 var = 'هقر'
 elseif tonumber(user_id) == tonumber(2055427247) then
-var = 'مبرمج السورس'
+var = 'مبرمج جميع السورسات'
 elseif tonumber(user_id) == tonumber(1990104439) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1208165035) then
@@ -2835,11 +2835,11 @@ send(msg.chat_id_, msg.id_,quschen)
 end
 if text == 'سورس' or text == 'السورس' or text == 'يا سورس' then
 local Text = [[
-╔≂≂≂≂≂≂≂❲𝐄𝐋𝐊𝐈𝐍𝐆❳≂≂≂≂≂≂≂╗
+╔≂≂≂≂≂≂≂❲[𝐄𝐋𝐊𝐈𝐍𝐆](t.me/alkingramadan1)❳≂≂≂≂≂≂≂╗
 ✰ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐄𝐥𝐤𝐢𝐧𝐠, 
 ✰ 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 
 ✰ 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎
-╚≂≂≂≂≂≂≂❲𝐄𝐋𝐊𝐈𝐍𝐆❳≂≂≂≂≂≂≂╝
+╚≂≂≂≂≂≂≂❲[𝐄𝐋𝐊𝐈𝐍𝐆](t.me/alkingramadan1)❳≂≂≂≂≂≂≂╝
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
