@@ -401,9 +401,9 @@ var = 'المبرمج ماديسون'
 elseif tonumber(user_id) == tonumber(2060957526) then
 var = 'المبرمج رمضان الكينج'
 elseif tonumber(user_id) == tonumber(1645561253) then
-var = 'مالك السورس'
-elseif tonumber(user_id) == tonumber(01062069438) then
 var = 'المطور احمد النقيب'
+elseif tonumber(user_id) == tonumber(01062069438) then
+var = 'هقر ؤخلاص'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif bot_data:sismember(ban_id.."Dev:ban:2", user_id) then
@@ -4281,10 +4281,24 @@ end
 
 
 
-if text == 'ماديسون' or text == 'احمد ماديسون' or text == 'المبرمج ماديسون' then
+if text == 'ماديسون' or text == 'المبرمج ماديسون' or text == 'مبرمج السورس' then
 local Text = [[
 ◉ يمكنك التواصل معي..↑↓
 ◉ عن طريق معرفي بلاسفل..↑↓
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = ' 𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
+{{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if text == 'ماديسون' or text == 'احمد ماديسون' or text == 'المبرمج ماديسون' then
+local Text = [[
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -4298,8 +4312,8 @@ end
 
 if text == 'نقيب' or text == 'النقيب' or text == 'احمد النقيب' or text == 'يا نقيب' then
 local Text = [[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16331,7 +16345,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
-.𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
+.𖣂 ??𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
@@ -18615,7 +18629,7 @@ local Teext =[[
 𖢅⤈ تقييد يوم + عدد الايام
 𖢅⤈ الغاء تقييد ↫ لالغاء التقييد بالوقت
 •═════•| ᴇʟᴋɪɴɢ |•═════•
-𖢅⤈ [𝘾𝙃 𝙀𝙇𝙆𝙄𝙉𝙂 ♪ ](https://t.me/alkingramadan1)
+𖢅⤈ [??𝙃 𝙀𝙇𝙆𝙄𝙉𝙂 ♪ ](https://t.me/alkingramadan1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
