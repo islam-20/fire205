@@ -4035,7 +4035,7 @@ local Text =[[
 𖢅⤈ اوامر المطورين🌖
 𖢅⤈ 💭 ↫ اوامر الاعضاء
 •═════•| ᴇʟᴋɪɴɢ |•═════•
-𖢅⤈ [𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙧𝙘𝙚 𝙖𝙣𝙪𝙗𝙞𝙨 𝄵](https://t.me/alkingramadan1)
+𖢅⤈ [𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙧𝙘𝙚 𝙚𝙡𝙠𝙞𝙣𝙜 𝄵](https://t.me/alkingramadan1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -6213,7 +6213,7 @@ local bana = {
 "⚕ جمـال ودلال 😍",
 "⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑮𝒓𝒐𝒖𝒑 ★",
 "⚕ 𓆰 قمـر ماشي ع الارض 🙈★",
-"𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙧𝙘𝙚 𝙖𝙣𝙪𝙗𝙞𝙨 𝄵",
+"𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙧𝙘𝙚 𝙚𝙡𝙠𝙞𝙣𝙜 𝄵",
 
 }
 local rdphoto = bana[math.random(#bana)]
@@ -19328,7 +19328,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text ='𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"},{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady1"}},
 {{text = '˹ᴛᴀᴡᴏsʟ˼',url="t.me/E_H_M_BOT"}}, 
-{{text = '𖢅⤈ 𝙱𝙰𝙲??↵', callback_data="/change-hhh"}},
+{{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/change-hhh"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -19372,7 +19372,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/change-siusr' then
 local Teext =[[
-𖢅 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙧𝙘𝙚 𝙖𝙣𝙪𝙗𝙞𝙨 𝄵⁂︎ ⇣
+𖢅 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙧𝙘𝙚 𝙚𝙡𝙠𝙞𝙣𝙜 𝄵⁂︎ ⇣
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
