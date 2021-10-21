@@ -4283,32 +4283,32 @@ end
 
 if text == 'ماديسون' or text == 'احمد ماديسون' or text == 'المبرمج ماديسون' then
 local Text = [[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
-{{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
-{{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'نقيب' or text == 'النقيب' or text == 'احمد النقيب' or text == 'يا نقيب' then
-local Text = [[
 ◉ يمكنك التواصل معي..↑↓
 ◉ عن طريق معرفي بلاسفل..↑↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 𖤐',url="t.me/AHMED_ELNQYB"}},
+{{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
+{{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AHMED_ELNQYB&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+if text == 'ماديسون' or text == 'المبرمج ماديسون' or text == 'مبرمج السورس' or text == 'يا ماديسون' then
+local Text = [[
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
 {{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AHMED_ELNQYB&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'كينج' or text == 'رمضان الكينج' or text == 'الكينج' or text == 'الكينج رمضان' then
@@ -4318,12 +4318,12 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉',url="t.me/shahksaady"}},
+{{text = '𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉',url="t.me/shahksaady1"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajotaff"},{text ='⌯الــبــارات•', callback_data="/taffai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/tofgqjik"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/shahksaady&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/shahksaady1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -6071,7 +6071,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extr
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'𖢅⤈  الايدي ↫❨'..iduser..'❩\n𖢅⤈  المعرف ↫❨'..username..'❩\n𖢅⤈  الرتبه ↫❨'..rtp..'❩\n𖢅⤈  نوع الكشف ↫بالرد')
+send(msg.chat_id_, msg.id_,'𖢅⤈  الايدي ↫❨'..iduser..'❩\n??⤈  المعرف ↫❨'..username..'❩\n𖢅⤈  الرتبه ↫❨'..rtp..'❩\n𖢅⤈  نوع الكشف ↫بالرد')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -15109,7 +15109,7 @@ end
 if text == 'تعطيل ايدي صوره' and Manager(msg) then  
 if not bot_data:get(ban_id..'Bot:Id:Photo'..msg.chat_id_)  then
 bot_data:set(ban_id..'Bot:Id:Photo'..msg.chat_id_,true) 
-Text = '\n 𖢅⤈  تم تعطيل الايدي بالصوره' 
+Text = '\n ??⤈  تم تعطيل الايدي بالصوره' 
 else
 Text = '\n 𖢅⤈  بالتاكيد تم تعطيل الايدي بالصوره'
 end
@@ -19312,7 +19312,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"},{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady"}},
+{{text ='𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"},{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady1"}},
 {{text = '˹ᴛᴀᴡᴏsʟ˼',url="t.me/E_H_M_BOT"}}, 
 {{text = '𖢅⤈ 𝙱𝙰𝙲??↵', callback_data="/change-hhh"}},
 }
@@ -19331,7 +19331,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉', url="t.me/AAHMEED11"}},
-{{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady"}},
+{{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady1"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/change-hhh"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19362,20 +19362,20 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"},{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady"}},
+{{text ='𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"},{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady1"}},
 {{text = ' مــطــور الــبــوت 𖢅⤈↫', url="http://t.me/"..sudos.UserName}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/bnada-yquio' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"}},
+{{text = '𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 𖤐',url="t.me/AHMED_ELNQYB"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
 }
@@ -19383,42 +19383,42 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/Ajobanf' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '╞. 𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐥𝐟𝐚 .╡',url="t.me/so_alfaa"}},
-{{text = '𝐒𝐋𝐎𝐖𝐋𝐘.',url="t.me/a_7_z_a_n"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_ch"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/banfai' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝑀َ𝐴𝐷ِ𝐼𝑆ُ𝑂𝑁ْ .',url="t.me/https://t.me/joinchat/t3denQ2NYhw2YjVk"}},
-{{text = '╞. 𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐥𝐟𝐚 .╡',url="t.me/so_alfaa"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/gqjik' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙗𝙤𝙩 𝙢𝙖𝙙𝙞𝙨𝙤𝙣',url="t.me/M_A_DD_BOT"}},
-{{text = '𝙖𝙡𝙛𝙖 𝙢𝙪𝙨𝙞𝙘',url="t.me/MUS_ALF_BOT"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Night_light9_bot"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Wjeheki_bot"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_bot"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/C_N_N_bot"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19431,7 +19431,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉',url="t.me/shahksaady"}},
+{{text = '𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉',url="t.me/shahksaady1"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajotaff"},{text ='⌯الــبــارات•', callback_data="/taffai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/tofgqjik"}},
 }
@@ -19508,62 +19508,62 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='⌯𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"},{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady"}},
+{{text ='⌯𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/AAHMEED11"},{text ='𝙳𝙴𝚅 𝙴𝙻𝙺𝙸𝙽𝙶 ◉', url="t.me/shahksaady1"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_ch"}},
+{{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '╞. 𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐥𝐟𝐚 .╡',url="t.me/so_alfaa"}},
+{{text = '𝐒𝐋𝐎𝐖𝐋𝐘.',url="t.me/a_7_z_a_n"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo_1' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝑀َ𝐴𝐷ِ𝐼𝑆ُ𝑂𝑁ْ .',url="t.me/https://t.me/joinchat/t3denQ2NYhw2YjVk"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝐾َ𝐴𝑀َ𝐴𝐿ْ .',url="t.me/https://t.me/joinchat/D0n5owlY8Mo1YWU8"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo_12' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Night_light9_bot"}},
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Wjeheki_bot"}},
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_bot"}},
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/C_N_N_bot"}},
+{{text = '𝙗𝙤𝙩 𝙢𝙖𝙙𝙞𝙨𝙤𝙣',url="t.me/M_A_DD_BOT"}},
+{{text = '𝙖𝙡𝙛𝙖 𝙢𝙪𝙨𝙞𝙘',url="t.me/MUS_ALF_BOT"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo_123' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '!! " 𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 "𖤐',url="t.me/AHMED_ELNQYB"}},
+{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
 {{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
 }
