@@ -19369,13 +19369,13 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/bnada-yquio' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 𖤐',url="t.me/AHMED_ELNQYB"}},
+{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
 }
@@ -19383,42 +19383,42 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/Ajobanf' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_ch"}},
+{{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '╞. 𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐥𝐟𝐚 .╡',url="t.me/so_alfaa"}},
+{{text = '𝐒𝐋𝐎𝐖𝐋𝐘.',url="t.me/a_7_z_a_n"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/banfai' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝑀َ𝐴𝐷ِ𝐼𝑆ُ𝑂𝑁ْ .',url="t.me/https://t.me/joinchat/t3denQ2NYhw2YjVk"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝐾َ𝐴𝑀َ𝐴𝐿ْ .',url="t.me/https://t.me/joinchat/D0n5owlY8Mo1YWU8"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/gqjik' then
 local Teext =[[
-◉ يمكنك التواصل معي..↑↓
-◉ عن طريق معرفي بلاسفل..↑↓
+◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Night_light9_bot"}},
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Wjeheki_bot"}},
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_bot"}},
-{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/C_N_N_bot"}},
+{{text = '𝙗𝙤𝙩 𝙢𝙖𝙙𝙞𝙨𝙤𝙣',url="t.me/M_A_DD_BOT"}},
+{{text = '𝙖𝙡𝙛𝙖 𝙢𝙪𝙨𝙞𝙘',url="t.me/MUS_ALF_BOT"}},
 {{text = '𖢅⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19515,55 +19515,55 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/parlo' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '╞. 𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐥𝐟𝐚 .╡',url="t.me/so_alfaa"}},
-{{text = '𝐒𝐋𝐎𝐖𝐋𝐘.',url="t.me/a_7_z_a_n"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo_1' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝑀َ𝐴𝐷ِ𝐼𝑆ُ𝑂𝑁ْ .',url="t.me/https://t.me/joinchat/t3denQ2NYhw2YjVk"}},
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝐾َ𝐴𝑀َ𝐴𝐿ْ .',url="t.me/https://t.me/joinchat/D0n5owlY8Mo1YWU8"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑙𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_ch"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo_12' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙗𝙤𝙩 𝙢𝙖𝙙𝙞𝙨𝙤𝙣',url="t.me/M_A_DD_BOT"}},
-{{text = '𝙖𝙡𝙛𝙖 𝙢𝙪𝙨𝙞𝙘',url="t.me/MUS_ALF_BOT"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Night_light9_bot"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/Wjeheki_bot"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/night_light_club_bot"}},
+{{text = '𝑛𝑖𝑔ℎ𝑡 𝑐𝑙𝑢𝑏',url="t.me/C_N_N_bot"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo_123' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
-◉ عن طريق المعرف بلاسفل..↑↓
+◉ يمكنك التواصل معي..↑↓
+◉ عن طريق معرفي بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
+{{text = '𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 𖤐',url="t.me/AHMED_ELNQYB"}},
 {{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
 }
