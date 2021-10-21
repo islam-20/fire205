@@ -178,7 +178,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {1208165035,01062069438,2060957526,01224165642}   
+dev_users = {1208165035,01062069438,2060957526,1645561253}   
 function Developers(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_users) do  
@@ -199,7 +199,7 @@ end
 end  
 return DRAGON  
 end 
-sudo_users = {SUDO,1208165035,01062069438,2060957526,01224165642}   
+sudo_users = {SUDO,1208165035,01062069438,2060957526,1645561253}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -350,7 +350,7 @@ if tonumber(user_id) == tonumber(1208165035) then
 var = true 
 elseif tonumber(user_id) == tonumber(2060957526) then
 var = true  
-elseif tonumber(user_id) == tonumber(01224165642) then
+elseif tonumber(user_id) == tonumber(1645561253) then
 var = true  
 elseif tonumber(user_id) == tonumber(01062069438) then
 var = true  
@@ -400,10 +400,10 @@ if tonumber(user_id) == tonumber(1208165035) then
 var = 'المبرمج ماديسون'
 elseif tonumber(user_id) == tonumber(2060957526) then
 var = 'المبرمج رمضان الكينج'
-elseif tonumber(user_id) == tonumber(01224165642) then
+elseif tonumber(user_id) == tonumber(1645561253) then
 var = 'مالك السورس'
 elseif tonumber(user_id) == tonumber(01062069438) then
-var = 'البرمج بارلو'
+var = 'المطور احمد النقيب'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif bot_data:sismember(ban_id.."Dev:ban:2", user_id) then
@@ -4288,27 +4288,27 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 𖤐',url="t.me/AHMED_ELNQYB"}},
+{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AHMED_ELNQYB&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'ماديسون' or text == 'المبرمج ماديسون' or text == 'مبرمج السورس' or text == 'يا ماديسون' then
+if text == 'نقيب' or text == 'النقيب' or text == 'احمد النقيب' or text == 'يا نقيب' then
 local Text = [[
 ◉ يمكنك التواصل مع ماديسؤن..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/AAHMEED11"}},
+{{text = '𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 𖤐',url="t.me/AHMED_ELNQYB"}},
 {{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AHMED_ELNQYB&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'كينج' or text == 'رمضان الكينج' or text == 'الكينج' or text == 'الكينج رمضان' then
@@ -5606,7 +5606,7 @@ if tonumber(result.sender_user_id_) == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(01224165642) then  
+if tonumber(result.sender_user_id_) == tonumber(1645561253) then  
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5664,7 +5664,7 @@ if result.id_ == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(01224165642) then
+if result.id_ == tonumber(1645561253) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -5720,7 +5720,7 @@ if tonumber(userid) == tonumber(2060957526) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(01224165642) then  
+if tonumber(userid) == tonumber(1645561253) then  
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5774,7 +5774,7 @@ if tonumber(result.sender_user_id_) == tonumber(2060957526) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(01224165642) then  
+if tonumber(result.sender_user_id_) == tonumber(1645561253) then  
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -5823,7 +5823,7 @@ if result.id_ == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(01224165642) then
+if result.id_ == tonumber(1645561253) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
@@ -5876,7 +5876,7 @@ if tonumber(userid) == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(01224165642) then  
+if tonumber(userid) == tonumber(1645561253) then  
 send(msg.chat_id_, msg.id_, " 𖢅⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -22513,7 +22513,7 @@ local TEXT_SUD = bot_data:get(ban_id..'DRAGON:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
 else
-tdcli_function ({ID = "GetUser",user_id_ = 01224165642,},function(arg,result) 
+tdcli_function ({ID = "GetUser",user_id_ = 1645561253,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
 local Name = '𓌹 ᯓ مالـك السـوس ★ 𓌺\n['..result.first_name_..'](t.me/G8AZAAL)\n'
@@ -22531,7 +22531,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.
 else
 sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
  end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 01224165642, offset_ = 0, limit_ = 1 }, taha, nil)
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 1645561253, offset_ = 0, limit_ = 1 }, taha, nil)
 end,nil)
 end
 end
