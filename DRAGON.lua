@@ -178,7 +178,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {1208165035,01062069438,1878891780,01224165642}   
+dev_users = {2096660722,01062069438,1878891780,01224165642}   
 function Developers(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_users) do  
@@ -189,7 +189,7 @@ end
 return DRAGON  
 end 
 
-dev_madison = {1208165035} 
+dev_madison = {2096660722} 
 function Devsiria(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_siria) do  
@@ -199,7 +199,7 @@ end
 end  
 return DRAGON  
 end 
-sudo_users = {SUDO,1208165035,01062069438,1878891780,01224165642}   
+sudo_users = {SUDO,2096660722,01062069438,1878891780,01224165642}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -346,7 +346,7 @@ end
 end
 
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1208165035) then  
+if tonumber(user_id) == tonumber(2096660722) then  
 var = true 
 elseif tonumber(user_id) == tonumber(1878891780) then
 var = true  
@@ -396,7 +396,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1208165035) then  
+if tonumber(user_id) == tonumber(2096660722) then  
 var = 'المبرمج ماديسون'
 elseif tonumber(user_id) == tonumber(1878891780) then
 var = 'المبرمج احمد رايلي'
@@ -3164,7 +3164,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(1208165035,"𖤍⤈ . هناك شخص يريدك يا سيدي سوريا \n𖤍⤈ الشخص  {"..Name.."}\n𖤍⤈ اسم الجروب {"..NameChat.."}\n𖤍⤈ ايدي الجروب { `"..msg.chat_id_.."` }\n𖤍⤈ رابط الجروب \n [ "..LinkGroup.." ]\n    𖤍⤈ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(2096660722,"𖤍⤈ . هناك شخص يريدك يا سيدي سوريا \n𖤍⤈ الشخص  {"..Name.."}\n𖤍⤈ اسم الجروب {"..NameChat.."}\n𖤍⤈ ايدي الجروب { `"..msg.chat_id_.."` }\n𖤍⤈ رابط الجروب \n [ "..LinkGroup.." ]\n    𖤍⤈ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -5631,7 +5631,7 @@ if bot_data:sismember(ban_id..'msa3d:ban', result.sender_user_id_) then
 send(msg.chat_id_, msg.id_, "*𖤍⤈  لا تستطيع حظره او كتمه عام*")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1208165035) then  
+if tonumber(result.sender_user_id_) == tonumber(2096660722) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5689,7 +5689,7 @@ if bot_data:sismember(ban_id.."msa3d:ban", result.id_) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مساعد عام")
 return false 
 end
-if result.id_ == tonumber(1208165035) then
+if result.id_ == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -5741,7 +5741,7 @@ if bot_data:sismember(ban_id.."msa3d:ban", userid) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مساعد عام")
 return false 
 end
-if tonumber(userid) == tonumber(1208165035) then  
+if tonumber(userid) == tonumber(2096660722) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5795,7 +5795,7 @@ if bot_data:sismember(ban_id.."msa3d:ban", result.sender_user_id_) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم مساعد عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1208165035) then  
+if tonumber(result.sender_user_id_) == tonumber(2096660722) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -5848,7 +5848,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1208165035) then
+if result.id_ == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
@@ -5901,7 +5901,7 @@ if tonumber(userid) == tonumber(ban_id) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1208165035) then  
+if tonumber(userid) == tonumber(2096660722) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -22516,7 +22516,7 @@ local TEXT_SUD = bot_data:get(ban_id..'DRAGON:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
 else
-tdcli_function ({ID = "GetUser",user_id_ = 1208165035,},function(arg,result) 
+tdcli_function ({ID = "GetUser",user_id_ = 2096660722,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
 local Name = '𓌹 ᯓ مـبـرمـج الـسـورس 𓌺\n['..result.first_name_..'](t.me/UU_f7)\n'
@@ -22534,7 +22534,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.
 else
 sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
  end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 1208165035, offset_ = 0, limit_ = 1 }, taha, nil)
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 2096660722, offset_ = 0, limit_ = 1 }, taha, nil)
 end,nil)
 end
 end
