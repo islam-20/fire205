@@ -4317,7 +4317,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘋𝘌𝘝 𝘌𝘚𝘓𝘈𝘔  ◉',url="t.me/UU_f7"}},
+{{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
 }
@@ -4332,7 +4332,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐷𝐸𝑉 𝐸𝑆𝐿𝐴𝑀  ◉',url="t.me/UU_f7"}},
+{{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄  ◉',url="t.me/UU_f7"}},
 {{text ='⌯الــقــنــوات•', callback_data="/SO_FIR"},{text ='⌯الــبــارات•', callback_data="/mkislam2"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/mkfir4bot"}},
 }
@@ -4347,7 +4347,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' 𝐷𝐸𝑉 𝐸𝑆𝐿𝐴𝑀 ◉',url="t.me/UU_f7"}},
+{{text = ' 𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"}},
 {{text ='⌯الــقــنــوات•', callback_data="/SO_FIR"},{text ='⌯الــبــارات•', callback_data="/mkislam2"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/mkfir4bot"}},
 }
@@ -6423,7 +6423,7 @@ local SO_FIR = bot_data:get(ban_id..'text:ch:user')
 if SO_FIR then
 send(msg.chat_id_, msg.id_,'['..SO_FIR..']')
 else
-send(msg.chat_id_, msg.id_,' 𓆩𓅄𓆪⤈  لا تستطيع استخدام البوت \n 𓆩𓅄𓆪⤈   يرجى الاشتراك بالقناه اولا \n 𓆩𓅄𓆪⤈   اشترك هنا ['..bot_data:get(ban_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' 𓆩𓅄𓆪⤈  لا تستطيع استخدام البوت \n 𓆩𓅄𓆪⤈   يرجى الاشتراك بالقناه اولا \n 𓆩𓅄??⤈   اشترك هنا ['..bot_data:get(ban_id..'add:ch:username')..']')
 end
 return false
 end
@@ -7888,7 +7888,7 @@ function start_function(extra, result, success)
 if result.id_ then
 bot_data:srem(ban_id..'Sudo:User', result.id_)
 usertext = '\n 𓆩𓅄𓆪⤈  الـعـضو   ↫ ['..result.title_..'](t.me/'..(username or 'SO_FIR')..')'
-status  = '\n ????𓆪⤈  تم تنزيله من المطورين'
+status  = '\n ??𓅄𓆪⤈  تم تنزيله من المطورين'
 texts = usertext..status
 else
 texts = ' 𓆩𓅄𓆪⤈  لا يوجد حساب بهاذا المعرف'
@@ -17735,7 +17735,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_FIR"}},
+{{text = '??𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_FIR"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
@@ -19341,7 +19341,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/UU_f7"},{text ='𝙳𝙴𝚅 𝙰𝙷𝙼𝙴𝙳 ◉', url="t.me/UU_f7"}},
+{{text ='𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"},{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉', url="t.me/UU_f7"}},
 {{text = '˹ᴛᴀᴡᴏsʟ˼',url="t.me/E_H_M_BOT"}}, 
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲??↵', callback_data="/change-hhh"}},
 }
@@ -19359,8 +19359,8 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉', url="t.me/UU_f7"}},
-{{text ='𝙳𝙴𝚅 𝙰𝙷𝙼𝙴𝙳 ◉', url="t.me/UU_f7"}},
+{{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉', url="t.me/UU_f7"}},
+{{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉', url="t.me/UU_f7"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/change-hhh"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19391,7 +19391,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/UU_f7"},{text ='𝙳𝙴𝚅 𝙰𝙷𝙼𝙴𝙳 ◉', url="t.me/UU_f7"}},
+{{text ='𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"},{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉', url="t.me/UU_f7"}},
 {{text = ' مــطــور الــبــوت 𓆩𓅄𓆪⤈↫', url="http://t.me/"..sudos.UserName}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19404,7 +19404,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ⋆',url="t.me/UU_f7"}},
+{{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ⋆',url="t.me/UU_f7"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
 }
@@ -19419,8 +19419,8 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '𝘽𝙇𝘼𝘾𝙆 , 𝙒𝙃𝙄𝙏𝙀 ♡︎•',url="t.me/black74white"}},
-{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙇𝙁𝘼 ♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_FIR"}},
-{{text = '𝙎𝙇𝙊𝙒𝙇𝙔 ♡•',url="t.me/SO_FIR"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐅𝐈𝐑𝐄♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_FIR"}},
+{{text = '𝐅𝐈𝐑𝐄 ♡•',url="t.me/SO_FIR"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19461,7 +19461,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙰𝙷𝙼𝙴𝙳 ◉',url="t.me/UU_f7"}},
+{{text = '𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉',url="t.me/UU_f7"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajotaff"},{text ='⌯الــبــارات•', callback_data="/taffai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/tofgqjik"}},
 }
@@ -19537,7 +19537,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='⌯𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/UU_f7"},{text ='𝙳𝙴𝚅 𝙰𝙷𝙼𝙴𝙳 ◉', url="t.me/UU_f7"}},
+{{text ='⌯𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"},{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈 ◉', url="t.me/UU_f7"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19564,8 +19564,8 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '𝘽𝙇𝘼𝘾𝙆 , 𝙒𝙃𝙄𝙏𝙀 ♡︎•',url="t.me/black74white"}},
-{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙇𝙁𝘼 ♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_FIR"}},
-{{text = '𝙎𝙇𝙊𝙒𝙇𝙔 ♡•',url="t.me/SO_FIR"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐅𝐈𝐑𝐄♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_FIR"}},
+{{text = '𝐅𝐈𝐑𝐄 ♡•',url="t.me/SO_FIR"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19578,7 +19578,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙗𝙤𝙩 𝙢𝙖𝙙𝙞𝙨𝙤𝙣',url="t.me/M_A_DD_BOT"}},
+{{text = '𝘉𝘖𝘛 𝘌𝘚𝘓𝘈𝘔',url="t.me/fir_205BOT"}},
 {{text = '𝙖𝙡𝙛𝙖 𝙢𝙪𝙨𝙞𝙘',url="t.me/MUS_ALF_BOT"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
@@ -22808,7 +22808,7 @@ end
 if #list == 0 then
 t = " 𓆩𓅄𓆪⤈  لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n ??𓅄𓆪⤈  تم التعديل على الميديا\n 𓆩𓅄𓆪⤈  الشخص الي قام بالتعديل\n 𓆩𓅄𓆪⤈  ايدي الشخص ◂ '..result.sender_user_id_..'\n 𓆩𓅄𓆪⤈  معرف الشخص ↫{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 𓆩𓅄𓆪⤈  تم التعديل على الميديا\n 𓆩𓅄𓆪⤈  الشخص الي قام بالتعديل\n 𓆩𓅄𓆪⤈  ايدي الشخص ◂ '..result.sender_user_id_..'\n 𓆩𓅄𓆪⤈  معرف الشخص ↫{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
