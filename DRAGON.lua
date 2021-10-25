@@ -5701,7 +5701,7 @@ if result.id_ == tonumber(0000000000) then
 send(msg.chat_id_, msg.id_, "  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(000000000p) then
+if result.id_ == tonumber(0000000000) then
 send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
