@@ -22537,7 +22537,7 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 1859656976, offset_ = 
 end,nil)
 end
 end
-if text == "المطور علام" or text == علام" then
+if text == "المطور علام" or text == "علام" then
 local TEXT_SUD = bot_data:get(ban_id..'DRAGON:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
