@@ -22,31 +22,31 @@ file:write(serialized)
 file:close()  
 end  
 if not bot_data:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
-print('\27[0;31m✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n التوكن غير صحيح تاكد منه ثم ارسله')
+print('\27[0;31m✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n27[0;39;49m')
 local json = JSON.decode(url)
 bot_data:set(id_server..":token_username",json.result.username)
 bot_data:set(id_server..":token",token)
 end 
 else
-print('\27[0;35m✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n لم يتم حفظ التوكن ارسل لي التوكن الان')
+print('\27[0;35m✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
 os.execute('lua DRAGON.lua')
 end
 if not bot_data:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
-io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n27[0;39;49m')
+io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n27[0;39;49m')
 bot_data:set(id_server..":SUDO:ID",SUDOID)
 else
-print('\27[0;31m✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
+print('\27[0;31m✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
 
 io.write('\27[1;31m ↓ ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
@@ -84,15 +84,15 @@ token="]]..bot_data:get(id_server..":token")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
-echo "✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪"
+echo "✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪"
 echo "TG IS NOT FIND IN FILES BOT"
-echo "✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪"
+echo "✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪"
 exit 1
 fi
 if [ ! $token ]; then
-echo "✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪"
+echo "✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪"
 echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE Info.lua \e[0m"
-echo "✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪"
+echo "✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪"
 exit 1
 fi
 echo -e "\033[38;5;208m"
@@ -164,7 +164,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/SoRsAt/KiNg/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/islam-20055/fire205/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -1283,7 +1283,7 @@ end
 
 if text == ("الردود العامه") and Devban(msg) then 
 local list = bot_data:smembers(ban_id..'List:Rd:Sudo')
-text = "\n 𖤍⤈  قائمة الردود العامه \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+text = "\n 𖤍⤈  قائمة الردود العامه \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 if bot_data:get(ban_id.."Add:Rd:Sudo:Gif"..v) then
 db = 'متحركه'
@@ -1548,7 +1548,7 @@ end
 
 if text == ("الردود") and Manager(msg) then
 local list = bot_data:smembers(ban_id..'List:Manager'..msg.chat_id_..'')
-text = " 𖤍⤈  قائمه الردود \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+text = " 𖤍⤈  قائمه الردود \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 if bot_data:get(ban_id.."Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = 'متحركه'
@@ -1784,7 +1784,7 @@ if Chat_Type == 'UserBot' then
 if text == '/start' or text == 'رجوع' then 
 if Devban(msg) then
 if not msa3d(msg) then
-local bl = '𖤍⤈ انت الان المطور الثانوي في البوت \n𖤍⤈  سورس ريسك\n 𖤍⤈ يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/SO_RISK)'
+local bl = '𖤍⤈ انت الان المطور الثانوي في البوت \n𖤍⤈  سورس فاير\n 𖤍⤈ يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/SO_RISK)'
 local keyboard = {
 {'الاحصائيات'},
 {'المطور','المساعد'},
@@ -1806,7 +1806,7 @@ if not msa3d(msg) then
 if not Devban(msg) then
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'سوريا') 
 local DRAGON_Msg = { 
-' ✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n🌐╢ وظيفتي حماية المجموعات\n✅╢ لتفعيل البوت عليك اتباع مايلي \n🔘╢ أضِف البوت إلى مجموعتك\n⚡️╢ ارفعهُ » مشرف\n⬆️╜ سيتم ترقيتك مالك في البوت لاوامر التسليه اضغط /free او اظهار الكيب\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪ـــــ ',
+' ✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n🌐╢ وظيفتي حماية المجموعات\n✅╢ لتفعيل البوت عليك اتباع مايلي \n🔘╢ أضِف البوت إلى مجموعتك\n⚡️╢ ارفعهُ » مشرف\n⬆️╜ سيتم ترقيتك مالك في البوت لاوامر التسليه اضغط /free او اظهار الكيب\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪ـــــ ',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -1919,7 +1919,7 @@ end
 if Chat_Type == 'UserBot' then
 if text == '/start' or text == 'رجوع' then  
 if msa3d(msg) then
-local bl = '𖤍⤈ انت الان المطور الاساسي في البوت \n𖤍⤈  سورس ريسك\n 𖤍⤈ يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/SO_RISK)'
+local bl = '𖤍⤈ انت الان المطور الاساسي في البوت \n𖤍⤈  سورس فاير\n 𖤍⤈ يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/SO_RISK)'
 local keyboard = {
 {'ضع اسم للبوت','معلومات الكيبورد'},
 {'قـسـم الـسـورس'},
@@ -2090,17 +2090,17 @@ HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 uptime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
 echo '📟l⌯⊱ ❨ نظام التشغيل ❩ ⊰•\n* '"$linux_version"'*' 
-echo '✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 🖨️l⌯⊱ ❨ الذاكره العشوائيه ❩  ⊰•\n❨* '"$memUsedPrc"'*❩'
-echo '✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 💾l⌯⊱ ❨ وحـده الـتـخـزيـن ❩  ⊰•\n❨* '"$HardDisk"'*❩'
-echo '✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 🖥️l⌯⊱ ❨ موقـع الـسـيـرفـر ❩ ⊰•\n❨*»» '`curl http://th3boss.com/ip/location`'*❩'
-echo '✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 🕹️l⌯⊱ ❨ الـمــعــالــج ❩  ⊰•\n❨* '"`grep -c processor /proc/cpuinfo`""Core ~ ❨$CPUPer%❩ "'*❩'
-echo '✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 👨🏾‍🔧l⌯⊱ ❨ الــدخــول ❩  ⊰•\n❨* '`whoami`'*❩'
-echo '✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 🔌l⌯⊱ ❨ مـده تـشغيـل الـسـيـرفـر ❩ ⊰•\n❨* '"$uptime"'*❩'
+echo '✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 🖨️l⌯⊱ ❨ الذاكره العشوائيه ❩  ⊰•\n❨* '"$memUsedPrc"'*❩'
+echo '✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 💾l⌯⊱ ❨ وحـده الـتـخـزيـن ❩  ⊰•\n❨* '"$HardDisk"'*❩'
+echo '✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 🖥️l⌯⊱ ❨ موقـع الـسـيـرفـر ❩ ⊰•\n❨*»» '`curl http://th3boss.com/ip/location`'*❩'
+echo '✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 🕹️l⌯⊱ ❨ الـمــعــالــج ❩  ⊰•\n❨* '"`grep -c processor /proc/cpuinfo`""Core ~ ❨$CPUPer%❩ "'*❩'
+echo '✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 👨🏾‍🔧l⌯⊱ ❨ الــدخــول ❩  ⊰•\n❨* '`whoami`'*❩'
+echo '✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 🔌l⌯⊱ ❨ مـده تـشغيـل الـسـيـرفـر ❩ ⊰•\n❨* '"$uptime"'*❩'
 ]]):read('*all'))  
 end
 if text == 'تحديث السورس ' and Devban(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/SoRsAt/KiNg/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/islam-20055/fire205/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 𖤍⤈  تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -2294,7 +2294,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 if text == 'الاصدار' and Devban(msg) then 
 bot_data:del(ban_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' 𖤍⤈  اصدار سورس ريسك{ S:1✓}')
+send(msg.chat_id_, msg.id_,' 𖤍⤈  اصدار سورس فاير{ S:1✓}')
 end
 if text == '⇣───❨ قـناه المطورين❩───⇣' then
 local Text = [[ 
@@ -2353,14 +2353,14 @@ end
 if text == 'قناه السورس' and Devban(msg) then
 bot_data:del(ban_id..'Srt:Bot') 
 local Text = [[ 
- 𖤍⤈  من أحسن السورسات على التليجرام سورس ريسك 𖤍⤈ 
+ 𖤍⤈  من أحسن السورسات على التليجرام سورس فاير 𖤍⤈ 
 بجد سورس أمان جدا وفي مميزات جامده
 تع نصب بوتك عندنا لو محظور
 خش على تواصل هيدخلك لروم التواصل 
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}}, 
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/41&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2381,7 +2381,7 @@ bot_data:set(ban_id.."AutoFile",true)
 end
 if text == ("الثانوين") and SudoBot(msg) then
 local list = bot_data:smembers(ban_id.."Dev:ban:2")
-t = "\n 𖤍⤈  قائمة مطورين الثانويين للبوت \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة مطورين الثانويين للبوت \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -2398,7 +2398,7 @@ end
 
 
 if text == 'الاحصائيات' and msa3d(msg) then 
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'ريسك') 
+local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فاير') 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
 local Users = bot_data:scard(ban_id..'User_Bot')  
 Namebot = "اسم البوت ↫"..Namebot..'\n↫عـدد الجروبات هو ↫ {'..Groups..'}\nعدد المشتركين هو ↫ {'..Users..'}'
@@ -2427,7 +2427,7 @@ return false
 end
 if text == ("المطورين") and msa3d(msg) then
 local list = bot_data:smembers(ban_id..'Sudo:User')
-t = "\n *𖤍⤈قائمة مطورين البوت* \n*✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪*\n"
+t = "\n *𖤍⤈قائمة مطورين البوت* \n*✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪*\n"
 keyboard = {
 {{text = 'مسح المطورين',callback_data=msg.sender_user_id_.."DelLsta".."55"}},
 }
@@ -2448,7 +2448,7 @@ send_inline_key(msg.chat_id_,t,nil,keyboard,msg_id)
 end
 if text == ("قائمه العام") and msa3d(msg) then
 local list = bot_data:smembers(ban_id..'GDRG:User')
-t = "\n 𖤍⤈  قائمه المحظورين عام \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمه المحظورين عام \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -2465,7 +2465,7 @@ return false
 end
 if text == ("قائمه الكتم العام") and msa3d(msg) then
 local list = bot_data:smembers(ban_id..'Gmute:User')
-t = "\n 𖤍⤈  قائمة المكتومين عام \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة المكتومين عام \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -3979,7 +3979,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/SoRsAt/KiNg/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/islam-20055/fire205/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 𖤍⤈  تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -4055,14 +4055,14 @@ return false
 end
 local Text =[[
 𖤍⤈  ااهلا بك في قائمة الاوامر الخاصه بالبوت اختر الامر الذي تريده من اسفل القائمه↫ ⤈ 
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ 💎 ↫ اوامر الحمايه
 𖤍⤈ 💎 ↫ اوامر الادمنيه
 𖤍⤈ 💥 ↫ اوامر المدراء
 𖤍⤈ م4 ↫ اوامر المنشئين
 𖤍⤈ اوامر المطورين🌖
 𖤍⤈ 💭 ↫ اوامر الاعضاء
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ [𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙞𝙨𝙠 𝄵](https://t.me/SO_RISK)
 ]]
 keyboard = {} 
@@ -4091,7 +4091,7 @@ end
 if text == 'الالعاب' then
 local Text = [[
  𖤍⤈ قائمة العاب المجموعه ↫ ⤈
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ لعبة التخمين ↫ خمن
 𖤍⤈ لعبة الامثله ↫ امثله
 𖤍⤈ لعبة العكس ↫ العكس
@@ -4105,15 +4105,15 @@ local Text = [[
 𖤍⤈ لعبة المحيبس ↫ المحيبس
 𖤍⤈ لعبة الرياضيات ↫ رياضيات
 𖤍⤈ لعبة الانكليزيه ↫ انكليزيه
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ نقاطي⌯ بيع نقاطي
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
-𖤍⤈ [𝘾𝙃 𝙍𝙄𝙎𝙆 ♪ ](https://t.me/SO_RISK)
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
+𖤍⤈ [𝘾𝙃 𝐹𝐼𝑅𝐸 ♪ ](https://t.me/SO_RISK)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4132,7 +4132,7 @@ keyboard.inline_keyboard = {
 {text = 'اوامر الاعضاء', callback_data="/change-names"},
 },
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4141,7 +4141,7 @@ end
 if text == 'رسائلي' then
 local Text =[[
 𖤍من خلال الازار يمكن مسح رسائلك وسحكاتك
-𖤍⤈ [𝘾𝙃 𝙍𝙄𝙎𝙆 ♪ ](https://t.me/SO_RISK)
+𖤍⤈ [𝘾𝙃 𝐹𝐼𝑅𝐸 ♪ ](https://t.me/SO_RISK)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -4152,7 +4152,7 @@ keyboard.inline_keyboard = {
 {text ='⌯ اخفاء الكليشه⌯ ', callback_data="/hide"},
 },
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4241,7 +4241,7 @@ keyboard.inline_keyboard = {
 {text ='⌯ الجوزاء 🌩', callback_data="/zguza"},{text ='⌯ الدلو 🦯', callback_data="/zdlu"},
 },
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4283,7 +4283,7 @@ keyboard.inline_keyboard = {
 {{text="اذاعة خاص",callback_data="Siria_aza3h2"..msg.sender_user_id_}},
 {{text="رساله الي مطور البوت",callback_data="Siria_aza3h3"..msg.sender_user_id_}},
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4292,11 +4292,11 @@ end
 ----------------------------------------------------------------- انتهئ الاوامر الجديدة
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 local Text = [[
-[♢ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐢𝐬𝐤](t.me/so_alfaa)
+[♢ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐹𝐼𝑅𝐸](t.me/SO_FIR)
 
-[♢ | 𝐑𝐢𝐬𝐤 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞](t.me/so_alfaa)
+[♢ | 𝐑𝐢𝐬𝐤 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞](t.me/SO_FIR)
 
-[♢ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰](t.me/so_alfaa)
+[♢ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰](t.me/SO_FIR)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -4312,7 +4312,7 @@ end
 
 if text == 'نيني' or text == 'هقخص ماديسون' or text == '8ث9سون' then
 local Text = [[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 ]]
 keyboard = {} 
@@ -4325,29 +4325,29 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_f7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'ماديسون' or text == 'المبرمج ماديسون' or text == 'مبرمج السورس' or text == 'يا نقيب' then
+if text == 'اسلام' or text == 'المبرمج ماديسون' or text == 'مبرمج السورس' or text == 'يا نقيب' then
 local Text = [[
 ◉ يمكنك التواصل معي..↑↓
 ◉ عن طريق معرفي بلاسفل..↑↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙼𝙰𝙳𝙸𝚂𝙾𝙽 ◉',url="t.me/UU_f7"}},
-{{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
-{{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
+{{text = '𝐷𝐸𝑉 𝐸𝑆𝐿𝐴𝑀  ◉',url="t.me/UU_f7"}},
+{{text ='⌯الــقــنــوات•', callback_data="/SO_FIR"},{text ='⌯الــبــارات•', callback_data="/mkislam2"}},  
+{{text ='⌯الــبــوتــات•', callback_data="/mkfir4bot"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_f7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'احمد رايلي' or text == 'احمد' or text == 'مطور السورس' or text == 'رايلي' then
+if text == 'اسلام مطور السورس' or text == 'اسلام' or text == 'مطور السورس' or text == 'فاير' then
 local Text = [[
 ◉ يمكنك التواصل معي..↑↓
 ◉ عن طريق معرفي بلاسفل..↑↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙳𝙴𝚅 𝙰𝙷𝙼𝙴𝙳 ◉',url="t.me/Ahmed_Riley"}},
+{{text = ' 𝐷𝐸𝑉 𝐸𝑆𝐿𝐴𝑀 ◉',url="t.me/UU_f7"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajotaff"},{text ='⌯الــبــارات•', callback_data="/taffai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/tofgqjik"}},
 }
@@ -4716,7 +4716,7 @@ local vsiriav_Msg = {
 "اخر اغنية سمعتها ?", 
 "تكلم عن نفسك", 
 "ليه انت مش سالك", 
-"ما هيا عيوب سورس ريسك؟ ", 
+"ما هيا عيوب سورس فاير؟ ", 
 "اخر كتاب قرآته", 
 "روايتك المفضله ?", 
 "اخر اكله اكلتها", 
@@ -4732,13 +4732,13 @@ local vsiriav_Msg = {
 " ما السيء في هذه الحياة ؟ ", 
 "أجمل شيء حصل معك خلال هذا الاسبوع ؟ ", 
 "سؤال ينرفزك ؟ ", 
-" هل يعجبك سورس ريسك؟؟ ", 
+" هل يعجبك سورس فاير؟؟ ", 
 " اكثر ممثل تحبه ؟ ", 
 "قد تخيلت شي في بالك وصار ؟ ", 
 "شيء عندك اهم من الناس ؟ ", 
 "تفضّل النقاش الطويل او تحب الاختصار ؟ ", 
 "وش أخر شي ضيعته؟ ", 
-"اي رايك في سورس ريسك؟ ", 
+"اي رايك في سورس فاير؟ ", 
 "كم مره حبيت؟ ", 
 " اكثر المتابعين عندك باي برنامج؟", 
 " آخر مره ضربت عشره كانت متى ؟", 
@@ -5392,7 +5392,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}}, 
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_RISK&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5507,16 +5507,16 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot" ..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SeriesDavid/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == '✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪' then
+if text == '✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪' then
 local Text = [[ 
- 𖤍⤈ من أحسن السورسات على التليجرام سورس ريسك𖤍⤈ 
+ 𖤍⤈ من أحسن السورسات على التليجرام سورس فاير𖤍⤈ 
 بجد سورس أمان جدا وفي مميزات جامده
 تع نصب بوتك عندنا لو محظور
 خش على تواصل هيدخلك لروم التواصل 
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}}, 
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/41&caption=' .. URL.escape(Text).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5534,9 +5534,9 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/SO_RISK/2107&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'العاب ريسك' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
+if text == 'العاب فاير' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
 local Text = [[  
- 𖤍⤈  اهلا في قائمه الالعاب المتطوره سورس ريسك𖤍⤈  
+ 𖤍⤈  اهلا في قائمه الالعاب المتطوره سورس فاير𖤍⤈  
 تفضل اختر لعبه من القائمه 
 ]]  
 keyboard = {}   
@@ -5566,7 +5566,7 @@ keyboard.inline_keyboard = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MADI_PICK/37&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5593,7 +5593,7 @@ return false
 end
 if text == ("قائمه العام") and Devban(msg) then
 local list = bot_data:smembers(ban_id..'GDRG:User')
-t = "\n 𖤍⤈  قائمة المحظورين عام \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة المحظورين عام \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -6075,7 +6075,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, 
 end
 if text == ("المطورين") and msa3d(msg) then
 local list = bot_data:smembers(ban_id..'Sudo:User')
-t = "\n *𖤍⤈قائمة مطورين البوت* \n*✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪*\n"
+t = "\n *𖤍⤈قائمة مطورين البوت* \n*✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪*\n"
 keyboard = {
 {{text = 'مسح المطورين',callback_data=msg.sender_user_id_.."DelLsta".."55"}},
 }
@@ -6266,7 +6266,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, ban.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n𖤍⤈↫ U𝘴ꫀ𝘳 : '..username..' \n𖤍⤈↫ ꪑ𝘴ᧁ : '..Msguser..' \n𖤍⤈↫ Rꪖꪀ𝘬 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n𖤍⤈↫ Iᗪ ߷  :  '..msg.sender_user_id_..' \n𖤍⤈↫ b𝐼𝑂 : '..getbioY..' \n𖤍⤈↫ 𝑐ℎ  : @SO_RISK \n \n𖤍⤈↫ ✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, ban.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n𖤍⤈↫ U𝘴ꫀ𝘳 : '..username..' \n𖤍⤈↫ ꪑ𝘴ᧁ : '..Msguser..' \n𖤍⤈↫ Rꪖꪀ𝘬 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n𖤍⤈↫ Iᗪ ߷  :  '..msg.sender_user_id_..' \n𖤍⤈↫ b𝐼𝑂 : '..getbioY..' \n𖤍⤈↫ 𝑐ℎ  : @SO_RISK \n \n𖤍⤈↫ ✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ❨'..Name..'❩ \n¦• 𝚄𝚂𝙴𝚁 ↝  ❨'..Name..'❩    ↝💘\n¦• 𝙼𝚂𝙶𝚂↝ ❨'..Msguser..'❩.   ↝💘\n ¦• ??𝙰𝙽??↝ ❨'..Rutba(msg.sender_user_id_,msg.chat_id_)..'❩    ↝💘\n¦• 𝙸𝙳↝  ❨'..msg.sender_user_id_..'❩    ↝💘\n¦• 𝒄𝒉↝   ❨@SO_RISK❩ ↝🇧??\n')
@@ -6454,7 +6454,7 @@ GetFile_Bot(msg)
 end
 if text == 'الاوامر المضافه' and Constructor(msg) then
 local list = bot_data:smembers(ban_id..'List:Cmd:Group:New'..msg.chat_id_..'')
-t = " 𖤍⤈  قائمه الاوامر المضافه  \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = " 𖤍⤈  قائمه الاوامر المضافه  \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 Cmds = bot_data:get(ban_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
@@ -7690,7 +7690,7 @@ send(msg.chat_id_, msg.id_, "\n 𖤍⤈  تم مسح قائمة المطورين
 end
 
 if text == 'الملفات' and Devban(msg) then
-t = ' 𖤍⤈  ملفات السورس ريسك↓\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪ \n'
+t = ' 𖤍⤈  ملفات السورس فاير↓\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -7702,13 +7702,13 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if Devban(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/SoRsAt/KiNg/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/islam-20055/fire205/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
 local TextS = "\n 𖤍⤈  اهلا بك في متجر ملفات سوريا\n 𖤍⤈  ملفات السورس ↓\n◤━───━??𝗼𝗼𝗼𝗻━───━◥\n\n"
-local TextE = "\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 𖤍⤈  علامة تعني { ✔️ } ملف مفعل\n 𖤍⤈  علامة تعني { ✖ } ملف معطل\n 𖤍⤈  قناة سورس ريسك↓\n".." 𖤍⤈  [اضغط هنا لدخول](t.me/SO_RISK) \n"
+local TextE = "\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 𖤍⤈  علامة تعني { ✔️ } ملف مفعل\n 𖤍⤈  علامة تعني { ✖ } ملف معطل\n 𖤍⤈  قناة سورس فاير↓\n".." 𖤍⤈  [اضغط هنا لدخول](t.me/SO_RISK) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -7740,13 +7740,13 @@ t = " 𖤍⤈  الملف  ↫ "..file.."\n 𖤍⤈  تم تعطيل ملف \n"
 else
 t = " 𖤍⤈  بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/SoRsAt/KiNg/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/islam-20055/fire205/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
 dofile('DRAGON.lua')  
 else
-send(msg.chat_id_, msg.id_," 𖤍⤈  عذرا الملف لايدعم سورس ريسك\n") 
+send(msg.chat_id_, msg.id_," 𖤍⤈  عذرا الملف لايدعم سورس فاير\n") 
 end
 return false
 end
@@ -7760,7 +7760,7 @@ t = " 𖤍⤈  بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ??⤈  الملف  ↫ "..file.."\n 𖤍⤈  تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/SoRsAt/KiNg/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/islam-20055/fire205/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -7768,7 +7768,7 @@ chek:close()
 send(msg.chat_id_, msg.id_,t) 
 dofile('DRAGON.lua')  
 else
-send(msg.chat_id_, msg.id_," 𖤍⤈  عذرا الملف لايدعم سورس ريسك\n") 
+send(msg.chat_id_, msg.id_," 𖤍⤈  عذرا الملف لايدعم سورس فاير\n") 
 end
 return false
 end
@@ -7930,7 +7930,7 @@ end
 
 if text == 'قائمه المالك' and Sudo(msg) then
 local list = bot_data:smembers(ban_id..'CoSu'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمه المالك\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمه المالك\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -7947,7 +7947,7 @@ return false
 end
 if text == ("صيح للمالك") or text == ("تاك للمالك") then
 local list = bot_data:smembers(ban_id..'CoSu'..msg.chat_id_)
-t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -8114,7 +8114,7 @@ st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..tok
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = bot_data:smembers(ban_id.."Basic:Constructor"..msg.chat_id_)
-t = " 𖤍⤈  المنشئين الاساسين تعالو مخرب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = " 𖤍⤈  المنشئين الاساسين تعالو مخرب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -8136,7 +8136,7 @@ Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..t
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = bot_data:smembers(ban_id.."Basic:Constructor"..msg.chat_id_)
-t = " ??⤈  المنشئين الاساسين تعالو مخرب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = " ??⤈  المنشئين الاساسين تعالو مخرب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -8243,7 +8243,7 @@ return false
 end
 if text == ("تاك للمنشئين") or text == ("صيح المنشئين") then
 local list = bot_data:smembers(ban_id..'Constructor'..msg.chat_id_)
-t = "\n *𖤍⤈انت فين يعم نت وهو بيدورو عليكو* \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n *𖤍⤈انت فين يعم نت وهو بيدورو عليكو* \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -8259,7 +8259,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمنشئين الاساسين") or text == ("صيح المنشئين الاساسين") then
 local list = bot_data:smembers(ban_id..'Basic:Constructor'..msg.chat_id_)
-t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -8427,7 +8427,7 @@ end
 
 if text == ("المنشئين") and BasicConstructor(msg) then
 local list = bot_data:smembers(ban_id..'Constructor'..msg.chat_id_)
-t = "\n *𖤍⤈قائمة المنشئين* \n*✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪*\n"
+t = "\n *𖤍⤈قائمة المنشئين* \n*✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪*\n"
 keyboard = {
 {{text = 'مسح المنشئين',callback_data=msg.sender_user_id_.."DelLsta".."120"}},
 }
@@ -8448,7 +8448,7 @@ send_inline_key(msg.chat_id_,t,nil,keyboard,msg_id)
 end
 if text == ("تاك للمنشئين") or text == ("صيح المنشئين") then
 local list = bot_data:smembers(ban_id..'Constructor'..msg.chat_id_)
-t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -8666,7 +8666,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == ("المدراء") and Constructor(msg) then
 local list = bot_data:smembers(ban_id..'Manager'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة المدراء \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة المدراء \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -8682,7 +8682,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمدراء") or text == ("صيح المدراء") then
 local list = bot_data:smembers(ban_id..'Manager'..msg.chat_id_)
-t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -9129,7 +9129,7 @@ return false
 end
 if text == ("الثانوين") and SudoBot(msg) then
 local list = bot_data:smembers(ban_id.."Dev:ban:2")
-t = "\n 𖤍⤈   قائمة مطورين الثانويين للبوت \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈   قائمة مطورين الثانويين للبوت \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -9468,7 +9468,7 @@ end,nil)
 end
 if text == ("الادمنيه") and Manager(msg) then
 local list = bot_data:smembers(ban_id..'Mod:User'..msg.chat_id_)
-t = "\n *𖤍⤈قائمة الادمنيه* \n*✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪*\n"
+t = "\n *𖤍⤈قائمة الادمنيه* \n*✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪*\n"
 keyboard = {
 {{text = 'مسح الادمنيه',callback_data=msg.sender_user_id_.."DelLsta".."160"}},
 }
@@ -9489,7 +9489,7 @@ send_inline_key(msg.chat_id_,t,nil,keyboard,msg_id)
 end
 if text == ("تاك للادمنيه") or text == ("صيح الادمنيه") then
 local list = bot_data:smembers(ban_id..'Mod:User'..msg.chat_id_)
-t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  وينكم تعالو يريدوكم بالجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10001,7 +10001,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم مسح المميزين')
 end
 if text == ("المميزين") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Special:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة مميزين الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة مميزين الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10312,7 +10312,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم مسح جميع الكلاب')
 end
 if text == ("تاك للكلاب") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Modde:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمه كلاب الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمه كلاب الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10381,7 +10381,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع حمير من ا
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Sakl:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة حمير الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة حمير الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10402,7 +10402,7 @@ local keyboard = {
 {{text ='⌯  كتم',callback_data=msg.sender_user_id_.."Mut"..result.sender_user_id_},{text ='⌯  الغاء كتم',callback_data=msg.sender_user_id_.."unMut"..result.sender_user_id_}},
 {{text ='⌯  تقييد',callback_data=msg.sender_user_id_.."restrict"..result.sender_user_id_},{text ='⌯  الغاء تقييد',callback_data=msg.sender_user_id_.."unrestrict"..result.sender_user_id_}},
 {{text ='⌯  رفع رتبه',callback_data=msg.sender_user_id_.."UpS"..result.sender_user_id_},{text ='⌯  تنزيل رتبه',callback_data=msg.sender_user_id_.."unUpS"..result.sender_user_id_}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 send_inline_key(msg.chat_id_,"*مـرحبـا بـك فـي قائـمه التحكم في العضـو فقط اضغط علي الامر 𖤍⤈ .*",nil,keyboard,msg_id)
@@ -10415,7 +10415,7 @@ if text == ("رفع مطور ثانوي") and SudoBot(msg) then
 function start_function(extra, result, success)
 local keyboard = {
 {{text ='مطور ثانوي عام',callback_data=msg.sender_user_id_.."Devban"..result.sender_user_id_},{text ='مطور ثانوي مجموعه',callback_data=msg.sender_user_id_.."SirSudoGp"..result.sender_user_id_}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 send_inline_key(msg.chat_id_,"*يمكنك التحكم عن طريق الازرار  بالاسفل  𖤍⤈ .*",nil,keyboard,msg_id)
@@ -10454,7 +10454,7 @@ if text == ("رفع") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) a
 function start_function(extra, result, success)
 local keyboard = {
 {{text ='⌯  رفع رتبه',callback_data=msg.sender_user_id_.."UpS"..result.sender_user_id_},{text ='⌯  تنزيل رتبه',callback_data=msg.sender_user_id_.."unUpS"..result.sender_user_id_}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 send_inline_key(msg.chat_id_,"*مـرحبـا بـك فـي قائـمه التحكم في العضـو فقط اضغط علي الامر 𖤍⤈ .*",nil,keyboard,msg_id)
@@ -10490,7 +10490,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع وتكات ال�
 end
 if text == ("تاك للوتكات") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Motte:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة وتكات الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة وتكات الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10561,7 +10561,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع القرده ب�
 end
 if text == ("تاك للقرود") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Motee:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة القرود الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة القرود الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10630,7 +10630,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع الارامل �
 end
 if text == ("تاك للارامل") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Bro:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة ارامل الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة ارامل الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10699,7 +10699,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع الخولات �
 end
 if text == ("تاك للخولات") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Girl:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة خولات الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة خولات الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10768,7 +10768,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع البقرات �
 end
 if text == ("تاك للبقرات") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Bakra:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة البقرات الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة البقرات الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10837,7 +10837,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع المزز با�
 end
 if text == ("تاك للمزز") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Tele:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة مزز الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة مزز الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10906,7 +10906,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع االاكساس
 end
 if text == ("تاك للاكساس") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة كساس الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة كساس الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -10974,7 +10974,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع القلوب ')
 end
 if text == ("تاك لقلبي") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة القلوب في الجروب\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة القلوب في الجروب\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11043,7 +11043,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع أولادي')
 end
 if text == ("تاك لولادي") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة كساس الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة كساس الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11112,7 +11112,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع االاكساس
 end
 if text == ("تاك لبناتي") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة بناتي الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة بناتي الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11181,7 +11181,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع االاكساس
 end
 if text == ("تاك للخاينين") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة الخاينين الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة الخاينين الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11250,7 +11250,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع زواحف')
 end
 if text == ("تاك للرقاصات") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة رقاصات الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة رقاصات الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11319,7 +11319,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع جريزي')
 end
 if text == ("تاك للمتناكين") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Jred:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة المتناكين الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة المتناكين الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11388,7 +11388,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم مسح كل الحكاكين')
 end
 if text == ("تاك للحكاكين") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة حكاكين الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة حكاكين الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11456,7 +11456,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم مسح كل النسوان بالج�
 end
 if text == ("تاك للنسوان") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Girl:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة نسوان الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة نسوان الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11524,7 +11524,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم مسح جميع المتزوجين')
 end
 if text == ("تاك للمتزوجين") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Mode:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمه ازواج الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمه ازواج الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11593,7 +11593,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم تنزيل جميع االاكساس
 end
 if text == ("تاك للميتنين") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Zahf:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة الميتنين \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة الميتنين \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11661,7 +11661,7 @@ send(msg.chat_id_, msg.id_, '\n 𖤍⤈  تم مسح المحظورين')
 end
 if text == ("المحظورين") then
 local list = bot_data:smembers(ban_id..'DRG:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة محظورين الجروب \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة محظورين الجروب \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -11901,7 +11901,7 @@ send(msg.chat_id_, msg.id_, ' 𖤍⤈  تم مسح المكتومين')
 end
 if text == ("المكتومين") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Muted:User'..msg.chat_id_)
-t = "\n 𖤍⤈  قائمة المكتومين \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة المكتومين \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -12955,12 +12955,12 @@ kickme = '✘'
 end
 NUM_MSG_MAX = bot_data:hget(ban_id.."flooding:settings:"..msg.chat_id_,"floodmax") or 0
 local text = 
-'\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪'..
+'\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪'..
 '\n 𖤍⤈  اعدادات الجروب كتالي √↓'..
-'\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪'..
+'\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪'..
 '\n 𖤍⤈   علامة ال {✓} تعني مفعل'..
 '\n 𖤍⤈   علامة ال {✘} تعني معطل'..
-'\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪'..
+'\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪'..
 '\n 𖤍⤈   الروابط  ↫ { '..lock_links..
 ' }\n'..' 𖤍⤈   المعرفات  ↫ { '..lock_user..
 ' }\n'..' 𖤍⤈   التاك  ↫ { '..lock_hash..
@@ -12971,7 +12971,7 @@ local text =
 ' }\n'..' 𖤍⤈   الماركدون  ↫ { '..lock_mark..
 ' }\n'..' 𖤍⤈   التعديل  ↫ { '..lock_edit..
 ' }\n'..' 𖤍⤈   تعديل الميديا  ↫ { '..lock_edit_med..
-' }\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪'..
+' }\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪'..
 '\n'..' 𖤍⤈   الكلايش  ↫ { '..lock_spam..
 ' }\n'..' 𖤍⤈   الكيبورد  ↫ { '..lock_inlin..
 ' }\n'..' 𖤍⤈   الاغاني  ↫ { '..lock_vico..
@@ -12980,7 +12980,7 @@ local text =
 ' }\n'..' 𖤍⤈   الدردشه  ↫ { '..lock_text..
 ' }\n'..' 𖤍⤈    الفيديو  ↫ { '..lock_ved..
 ' }\n'..' 𖤍⤈    الصور  ↫ { '..lock_photo..
-' }\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪'..
+' }\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪'..
 '\n'..' 𖤍⤈    الصوت  ↫ { '..lock_muse..
 ' }\n'..' 𖤍⤈   الملصقات  ↫ { '..lock_ste..
 ' }\n'..' 𖤍⤈   الجهات  ↫ { '..lock_phon..
@@ -12991,10 +12991,10 @@ local text =
 ' }\n'..' 𖤍⤈   التكرار  ↫ { '..flood..
 ' }\n'..' 𖤍⤈   الترحيب  ↫ { '..welcome..
 ' }\n'..' 𖤍⤈   عدد التكرار  ↫ { '..NUM_MSG_MAX..
-' }\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪'..
+' }\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪'..
 '\n 𖤍⤈   علامة ال {✓} تعني مفعل'..
 '\n 𖤍⤈   علامة ال {✘} تعني معطل'..
-'\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪'..
+'\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪'..
 '\n'..' 𖤍⤈   امر صيح  ↫ { '..kickme..
 ' }\n'..' 𖤍⤈   امر اطردني  ↫ { '..sehuser..
 ' }\n'..' 𖤍⤈   امر مين ضافك  ↫ { '..addme..
@@ -13003,7 +13003,7 @@ local text =
 ' }\n'..' 𖤍⤈   الايدي  ↫ { '..idgp..
 ' }\n'..' 𖤍⤈   الايدي بالصوره  ↫ { '..idph..
 ' }\n'..' 𖤍⤈   الرفع  ↫ { '..setadd..
-' }\n'..' 𖤍⤈   الحظر  ↫ { '..DRGm..' }\n\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 𖤍⤈  قناة سورس ريسك↓\n━━━━━━━\n'
+' }\n'..' 𖤍⤈   الحظر  ↫ { '..DRGm..' }\n\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 𖤍⤈  قناة سورس فاير↓\n━━━━━━━\n'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text ='⌯اخفاء الكليشه⌯ ', callback_data="/hide"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(text).."&reply_to_message_id=markdown&reply_markup="..JSON.encode(keyboard)) 
@@ -13142,13 +13142,13 @@ if text and text:match("^زخرفه (.*)$") and bot_data:get(ban_id.." ban:zhrf_
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n 𖤍⤈ قائمه الزخرفه \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈ قائمه الزخرفه \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'𖤍⤈ قائمه الزخرفه \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\nاضغط علي الاسم ليتم نسخه\n⚚━✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪━⚚ٴ\n ◉ ❲[𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪‘](t.me/SO_RISK)❳ ◉ ')
+send(msg.chat_id_, msg.id_, t..'𖤍⤈ قائمه الزخرفه \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\nاضغط علي الاسم ليتم نسخه\n⚚━✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪━⚚ٴ\n ◉ ❲[𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪‘](t.me/SO_RISK)❳ ◉ ')
 end
 if text == "ضع رابط" or text == 'وضع رابط' then
 if msg.reply_to_message_id_ == 0  and Mod(msg) then  
@@ -13372,7 +13372,7 @@ send(msg.chat_id_, msg.id_," *𖤍⤈︙تم مسح قائمه المنع*")
 end
 if text == "قائمه المنع" and Manager(msg) then   
 tdcli_function ({ID = "GetUser",user_id_ = ban_id},function(arg,data) 
-local Text = "\n *𖤍⤈︙قائمة المنع* \n*ٴ✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪*\n"
+local Text = "\n *𖤍⤈︙قائمة المنع* \n*ٴ✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪*\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'صور', url="https://t.me/"..data.username_.."?start=ph"..msg.chat_id_},{text = 'كلمات', url="https://t.me/"..data.username_.."?start=msg"..msg.chat_id_}},
@@ -13542,7 +13542,7 @@ return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n 𖤍⤈  قائمة البوتات الموجوده \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+text = "\n 𖤍⤈  قائمة البوتات الموجوده \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -13650,7 +13650,7 @@ if #list == 0 then
 send(msg.chat_id_, msg.id_,' 𖤍⤈  لا توجد صلاحيات مضافه')
 return false
 end
-t = "\n 𖤍⤈  قائمة الصلاحيات المضافه \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+t = "\n 𖤍⤈  قائمة الصلاحيات المضافه \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 for k,v in pairs(list) do
 var = bot_data:get(ban_id.."Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -14004,7 +14004,7 @@ end
 if text == 'امسح' then
 local Text =[[
 𖤍اليك الازرار الخاصه بمسح الميديا ومسح  الرسائل المعدله
-𖤍⤈ [𝘾𝙃 𝙍𝙄𝙎𝙆 ♪ ](https://t.me/SO_RISK)
+𖤍⤈ [𝘾𝙃 𝐹𝐼𝑅𝐸 ♪ ](https://t.me/SO_RISK)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14015,7 +14015,7 @@ keyboard.inline_keyboard = {
 {text ='⌯ اخفاء الكليشه⌯ ', callback_data="/hide"},
 },
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14074,8 +14074,8 @@ msg_type = 'MSG:NewUser'
 end
 
 
-if text == ""..(bot_data:get(ban_id..'Name:Bot') or 'ريسك').."" then  
-Namebot = (bot_data:get(ban_id..'Name:Bot') or 'ريسك')
+if text == ""..(bot_data:get(ban_id..'Name:Bot') or 'فاير').."" then  
+Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فاير')
 local DRAGON_Msg = {
 'ننعم يروحي 😻??',
 'نعم يا قلب  '..Namebot..'',
@@ -14110,7 +14110,7 @@ end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 if text == "بوت" then
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'ريسك') 
+local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فاير') 
 local DRAGON_Msg = { 
 'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
@@ -14460,7 +14460,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14470,7 +14470,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14480,7 +14480,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/comxnxp/20&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14491,7 +14491,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14503,7 +14503,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/D_V1_D/94&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14514,7 +14514,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/D_V1_D/93&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14525,7 +14525,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/D_V1_D/95&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14537,7 +14537,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/D_V1_D/96&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -14647,7 +14647,7 @@ PRo = '❴ ✔️ ❵'
 else
 PRo = '❴ ✖ ❵'
 end 
-send(msg.chat_id_, msg.id_,'\n 𖤍⤈ صلاحيات البوت هي\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 𖤍⤈   علامة ال {✔️} تعني مفعل\n 𖤍⤈   علامة ال {✖} تعني غير مفعل\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 𖤍⤈ تغير معلومات المجموعة ↞ '..INf..'\n 𖤍⤈ مسح الرسائل ↞ '..DEL..'\n 𖤍⤈ حظر المستخدمين ↞ '..REs..'\n 𖤍⤈ دعوة المستخدمين ↞ '..INv..'\n 𖤍⤈ ثتبيت الرسالة ↞ '..Pin..'\n 𖤍⤈ اضافة مشرفين ↞ '..PRo)   
+send(msg.chat_id_, msg.id_,'\n 𖤍⤈ صلاحيات البوت هي\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 𖤍⤈   علامة ال {✔️} تعني مفعل\n 𖤍⤈   علامة ال {✖} تعني غير مفعل\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 𖤍⤈ تغير معلومات المجموعة ↞ '..INf..'\n 𖤍⤈ مسح الرسائل ↞ '..DEL..'\n 𖤍⤈ حظر المستخدمين ↞ '..REs..'\n 𖤍⤈ دعوة المستخدمين ↞ '..INv..'\n 𖤍⤈ ثتبيت الرسالة ↞ '..Pin..'\n 𖤍⤈ اضافة مشرفين ↞ '..PRo)   
 end
 end
 if text == "تعطيل الانستا" and Manager(msg) then
@@ -14688,7 +14688,7 @@ User_id = "@"..b.username_
 else
 User_id = msg.sender_user_id_
 end 
-local t = "\n 𖤍⤈ المستخدم ~ ["..User_id .."] يصيح المشرفين \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+local t = "\n 𖤍⤈ المستخدم ~ ["..User_id .."] يصيح المشرفين \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 k = 0
 for i,v in pairs(data.members_) do
 if ban_id ~= v.user_id_ then 
@@ -14714,7 +14714,7 @@ User_id = "@"..b.username_
 else
 User_id = msg.sender_user_id_
 end 
-local t = "\n 𖤍⤈ المستخدم ~ ["..User_id .."] يصيح المشرفين \n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n"
+local t = "\n 𖤍⤈ المستخدم ~ ["..User_id .."] يصيح المشرفين \n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n"
 k = 0
 for i,v in pairs(data.members_) do
 if ban_id ~= v.user_id_ then 
@@ -14742,7 +14742,7 @@ local ramsesj20 =  "\n التاريخ : "..os.date("%Y/%m/%d")
 send(msg.chat_id_, msg.id_,ramsesj20)
 end
 --------------
-if text == ""..(bot_data:get(ban_id..'Name:Bot') or 'ريسك').." غادر" or text == 'غادر' and Sudo(msg) then     
+if text == ""..(bot_data:get(ban_id..'Name:Bot') or 'فاير').." غادر" or text == 'غادر' and Sudo(msg) then     
 if Sudo(msg) and not bot_data:get(ban_id..'Left:Bot'..msg.chat_id_)  then 
 if not Bot(msg) then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=ban_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
@@ -14754,7 +14754,7 @@ end
 end
 
 if text == 'الاحصائيات' and msa3d(msg) then 
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'ريسك') 
+local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فاير') 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
 local Users = bot_data:scard(ban_id..'User_Bot')  
 Namebot = "𝗡𝗔𝗠𝗘𝗕𝗢𝗧 ∭  ↫"..Namebot..'\n↫𝙜𝙧𝙤𝙪𝙥𝙨 🝤  ↫ {'..Groups..'}\n𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘𝗥𝗦 ⚚ ↫ {'..Users..'}'
@@ -15447,7 +15447,7 @@ local List = {
 ]],
 [[
 ▽ ¦❀• USER ➭ ⁞ #username .
-▽ ¦❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
+▽ ¦❀• 𝙼𝚂??𝚂 ➬ ⁞  #msgs  .
 ▽ ¦❀• STAT ➬ ⁞ #stast  .
 ▽ ¦❀• 𝙸𝙳  ➬ ⁞ #id  .
 ▽ ¦❀• 𝗖𝗛 - ❨@SO_RISK❩ 𖤍⤈ .
@@ -17162,7 +17162,7 @@ infovid = "𖤍⤈︙ اختر صيغه التنزيل الان.\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'Mp4', callback_data=id_from_user..":DownloadVid:"..msgidrp..":"..id_from_vid..":Mp4"},{text = 'mp3', callback_data=id_from_user..":DownloadVid:"..msgidrp..":"..id_from_vid..":mp3"},{text = 'ogg', callback_data=id_from_user..":DownloadVid:"..msgidrp..":"..id_from_vid..":ogg"}},
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪ ♬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪ ♬',url='http://t.me/SO_RISK'}},
 }
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(infovid)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 InfoVid = https.request('https://black-source.tk/Api/BotYoutube.php?Id='..URL.escape(id_from_vid))
@@ -17214,7 +17214,7 @@ end
 bot_data:srem(ban_id..'Ban:User'..Chat_id, userid)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = Chat_id, user_id_ = userid, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*• ︙تم الغاء حظره بنجاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
@@ -17228,43 +17228,43 @@ return false
 end
 if bot_data:get(ban_id..'Lock:kick'..Chat_id) and not Constructor(data) then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *• ︙تم تعطيل الحظر*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
 if SudoBot (userid) then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*• ︙لا تستطيع (كتم،طرد،حظر،تققيد) مطور السورس او الاساسي*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
 if tonumber(userid) == tonumber(ban_id) then  
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *• ︙لا تسطيع حظر البوت* ")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
 if Can_or_NotCan(userid, Chat_id) == true then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n *• ︙عذرا لا تستطيع حظر* ( '..Rutba(userid,Chat_id)..' )')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = Chat_id, user_id_ = userid, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,da) 
 if (da and da.code_ and da.code_ == 400 and da.message_ == "CHAT_ADMIN_REQUIRED") then 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(' *• ︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false  
 end
 if data.can_be_deleted_ == false then 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(' *• ︙البوت ليس ادمن يرجى ترقيتي !*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false  
 end
 bot_data:sadd(ban_id..'Ban:User'..Chat_id, userid)
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*• ︙تم حظره بنجاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 chat_kick(Chat_id, userid)
 end,nil)   
@@ -17281,13 +17281,13 @@ return false
 end
 if not bot_data:sismember(ban_id..'Muted:User'..Chat_id,userid) then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*• ︙الشخص غير مكتوم*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
 bot_data:srem(ban_id..'Muted:User'..Chat_id, userid)
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*• ︙تم الغاء كتمه بنجاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
@@ -17301,30 +17301,30 @@ return false
 end
 if tonumber(userid) == tonumber(ban_id) then  
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape( " *• ︙لا تسطيع كتم البوت* ")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false 
 end
 if SudoBot (userid) then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*• ︙لا تستطيع (كتم،طرد،حظر،تققيد) مطور السورس او الاساسي*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false 
 end
 if Can_or_NotCan(userid, Chat_id) == true then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n *• ︙عذرا لا تستطيع كتم* ( '..Rutba(userid,Chat_id)..' )')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 if data.can_be_deleted_ == false then 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(' *• ︙البوت ليس ادمن يرجى ترقيتي !*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false  
 end
 bot_data:sadd(ban_id..'Muted:User'..Chat_id, userid)
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*• ︙تم كتمه بنجاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 return false
@@ -17339,7 +17339,7 @@ return false
 end
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. Chat_id .. "&user_id=" .. userid .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*• ︙تم الغاء تقيبده بنجاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
 end
@@ -17353,30 +17353,30 @@ return false
 end
 if tonumber(userid) == tonumber(ban_id) then  
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape( " *• ︙لا تسطيع تقييد البوت* ")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false 
 end
 if SudoBot (userid) then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*• ︙لا تستطيع (كتم،طرد،حظر،تققيد) مطور السورس او الاساسي*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false 
 end
 if Can_or_NotCan(userid, Chat_id) == true then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n *• ︙عذرا لا تستطيع تقييد* ( '..Rutba(userid,Chat_id)..' )')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 if data.can_be_deleted_ == false then 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(' *• ︙البوت ليس ادمن يرجى ترقيتي !*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false  
 end
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..Chat_id.."&user_id="..userid)
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},}
+keyboard.inline_keyboard = {{{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},}
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('\n*• ︙تم تقييده بنجاح*')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 return false
@@ -17394,14 +17394,14 @@ if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "لديه رتبه منشئ اساسي"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "لديه رتبه منشئ"
 datainline = {
 {{text ='⌯  منشئ اساسي',callback_data=data.sender_user_id_.."Basic"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "لديه رتبه مدير"
@@ -17409,7 +17409,7 @@ datainline = {
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text ='⌯  منشئ اساسي',callback_data=data.sender_user_id_.."Basic"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
@@ -17418,7 +17418,7 @@ datainline = {
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text ='⌯  منشئ اساسي',callback_data=data.sender_user_id_.."Basic"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
@@ -17428,7 +17428,7 @@ datainline = {
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text ='⌯  منشئ اساسي',callback_data=data.sender_user_id_.."Basic"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 else
 datainlineText = "لا يمتلك رتبه"
@@ -17439,7 +17439,7 @@ datainline = {
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text ='⌯  منشئ اساسي',callback_data=data.sender_user_id_.."Basic"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 elseif BasicConstructor(data) then
@@ -17447,14 +17447,14 @@ if bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {	
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "لديه رتبه مدير"
 datainline = {
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
@@ -17462,7 +17462,7 @@ datainline = {
 {{text ='⌯  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
@@ -17471,7 +17471,7 @@ datainline = {
 {{text ='⌯  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 else
 datainlineText = "لا يمتلك رتبه"
@@ -17481,7 +17481,7 @@ datainline = {
 {{text ='⌯  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
 {{text ='⌯  منشئ',callback_data=data.sender_user_id_.."Constructor"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 elseif Constructor(data) then
@@ -17489,26 +17489,26 @@ if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه ادمن"
 datainline = {
 {{text ='⌯  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
@@ -17516,7 +17516,7 @@ datainline = {
 {{text ='⌯  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
 {{text ='⌯  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 else
 datainlineText = "لا يمتلك رتبه"
@@ -17525,7 +17525,7 @@ datainline = {
 {{text ='⌯  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
 {{text ='⌯  مدير',callback_data=data.sender_user_id_.."Manager"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 elseif Manager(data) then
@@ -17533,32 +17533,32 @@ if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "لديه رتبه مميز"
 datainline = {
 {{text ='⌯  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 else
 datainlineText = "لا يمتلك رتبه"
@@ -17566,7 +17566,7 @@ datainline = {
 {{text ='⌯  مميز',callback_data=data.sender_user_id_.."Special"..userid}},
 {{text ='⌯  ادمن',callback_data=data.sender_user_id_.."mod"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 elseif Mod(data) then
@@ -17574,38 +17574,38 @@ if bot_data:sismember(ban_id..'Basic:Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Constructor'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Manager'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه اعلى من رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Mod:User'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك رتبه مشابهه ل رتبتك"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif bot_data:sismember(ban_id..'Special:User'..Chat_id,userid) then
 datainlineText = "عذرا الشخص يمتلك اعلى رتبه تستطيع  رفعه لها"
 datainline = {
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 else
 datainlineText = "لا يمتلك رتبه"
 datainline = {
 {{text ='⌯  مميز',callback_data=data.sender_user_id_.."Special"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 end
@@ -17735,7 +17735,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
@@ -17744,7 +17744,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Constructor(data) then
 datainline = {
@@ -17752,20 +17752,20 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Manager(data) then
 datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Mod(data) then
 datainline = {
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 bb = {} 
@@ -17817,7 +17817,7 @@ bb.inline_keyboard = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape('𖤍⤈علامه ✅ تعني ان الشخص يمتلك رتبه ويمكنك تنزيلها بالضغط علي الرتبه بالاسفل .')..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(bb)) 
 return false
@@ -17866,7 +17866,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
@@ -17875,7 +17875,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Constructor(data) then
 datainline = {
@@ -17883,20 +17883,20 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Manager(data) then
 datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Mod(data) then
 datainline = {
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 bb = {} 
@@ -17948,7 +17948,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
@@ -17957,7 +17957,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Constructor(data) then
 datainline = {
@@ -17965,20 +17965,20 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Manager(data) then
 datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Mod(data) then
 datainline = {
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 bb = {} 
@@ -18030,7 +18030,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
@@ -18039,7 +18039,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Constructor(data) then
 datainline = {
@@ -18047,20 +18047,20 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Manager(data) then
 datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Mod(data) then
 datainline = {
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 bb = {} 
@@ -18113,7 +18113,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
@@ -18122,7 +18122,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Constructor(data) then
 datainline = {
@@ -18130,20 +18130,20 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Manager(data) then
 datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 elseif Mod(data) then
 datainline = {
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 end
 bb = {} 
@@ -18201,7 +18201,7 @@ bot_data:del(ban_id..'Special:User'..msg.chat_id_)
 end
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '-𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '-𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Vs)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 return false
@@ -18217,7 +18217,7 @@ end
 bot_data:sadd(ban_id.."Dev:ban:2", userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*• ︙تم تنفيذ الامر بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))
 return false
@@ -18233,7 +18233,7 @@ end
 bot_data:sadd(ban_id.."SirSudoGp", userid)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘾𝙃 𝙍𝙄𝙎𝙆', url="t.me/SO_RISK"}},
+{{text = '𝘾𝙃 𝐹𝐼𝑅𝐸', url="t.me/SO_RISK"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("*• تم رفعه مطور ثانوي مجموعه*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))
 return false
@@ -18275,7 +18275,7 @@ return false
 end
 local Teext =[[
 ⇊ اوامر القفل والفتح 𖤍⤈ 
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -18345,7 +18345,7 @@ return false
 end
 local Teext =[[
 ⇊ ❨اوامر التفعيل❩ والتعطي 𖤍⤈ 
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -18424,7 +18424,7 @@ return false
 end
 local Teext =[[
 لاوامر الرتب اتبع الازرار اسفل القائمه
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ]]
 keyboard.inline_keyboard = {
 {
@@ -18443,7 +18443,7 @@ keyboard.inline_keyboard = {
 {text="• مسح المميزين⌯",callback_data="/DelVipMem"},{text="• القائمه الرئيسيه⌯",callback_data="/DelList"}
 },
 {
-{text ='⌯ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪⌯',url="t.me/SO_RISK"}
+{text ='⌯ 𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪⌯',url="t.me/SO_RISK"}
 },
 {
 {text = '𖤍⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
@@ -18464,7 +18464,7 @@ local Teext =[[
  𖤍⤈ مرحب بيك في اوامر للمطورين 𖤍⤈ 
 اوامر المطورين ⇊
 ❨المطور ❩  ⇊
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
  𖤍⤈ تفعيل ↫ تعطيل 
  𖤍⤈ المجموعات ↫ المشتركين ↫ الاحصائيات
  𖤍⤈ رفع ↫ تنزيل منشئ اساسي
@@ -18472,9 +18472,9 @@ local Teext =[[
  𖤍⤈ مسح المنشئين ↫ المنشئين
  𖤍⤈ اسم ~ ايدي + بوت غادر 
  𖤍⤈ اذاعه 
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ❨المطور الاساسي+ المطور الثانوي❩
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
  𖤍⤈ تفعيل
  𖤍⤈ تعطيل
  𖤍⤈ مسح الاساسين
@@ -18526,7 +18526,7 @@ local Teext =[[
  𖤍⤈ المجموعات 
  𖤍⤈ تفعيل/تعطيل المغادره
  𖤍⤈ مسح الجروبات
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -18547,7 +18547,7 @@ return false
 end
 local Teext =[[
 𖤍⤈ اوامر الاعضاء ↫ ⤈
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ السورس⌯ موقعي⌯ رتبتي⌯ معلوماتي 
 𖤍⤈ رقمي⌯ لقبي⌯ نبذتي⌯ صلاحياتي⌯ غنيلي
 𖤍⤈ ميمز⌯ متحركه⌯ صوره⌯ ريمكس⌯ فلم⌯ مسلسل⌯ انمي
@@ -18559,7 +18559,7 @@ local Teext =[[
 𖤍⤈ ايدي المجموعه⌯ معلومات المجموعه 
 𖤍⤈ نسبه الحب⌯ نسبه الكره⌯ نسبه الغباء 
 𖤍⤈ نسبه الرجوله⌯ نسبه الانوثه⌯ التفاعل
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ لقبه + بالرد
 𖤍⤈ كول + الكلمه
 𖤍⤈ زخرفه + اسمك
@@ -18571,8 +18571,8 @@ local Teext =[[
 𖤍⤈ ايدي⌯ كشف  ↫ بالرد⌯ بالمعرف⌯ بالايدي
 𖤍⤈ تحويل + بالرد ↫ صوره⌯ ملصق⌯ صوت⌯ بصمه
 𖤍⤈ انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
-𖤍⤈ [𝘾𝙃 𝙍𝙄𝙎𝙆 ♪ ](https://t.me/SO_RISK)
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
+𖤍⤈ [𝘾𝙃 𝐹𝐼𝑅𝐸 ♪ ](https://t.me/SO_RISK)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -18593,7 +18593,7 @@ return false
 end
 local Teext =[[
 𖤍⤈ اوامر الادمنيه ↫ ⤈
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ الاعدادت
 𖤍⤈ تاك للكل 
 𖤍⤈ انشاء رابط
@@ -18611,25 +18611,25 @@ local Teext =[[
 𖤍⤈ ضع⌯ حذف ↫ قوانين
 𖤍⤈ اضف⌯ حذف ↫ صلاحيه
 𖤍⤈ الصلاحيات⌯ حذف الصلاحيات
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ ضع سبام + العدد
 𖤍⤈ ضع تكرار + العدد
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ رفع مميز⌯ تنزيل مميز
 𖤍⤈ المميزين⌯ حذف المميزين
 𖤍⤈ كشف القيود⌯ رفع القيود
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ حذف⌯ مسح + بالرد
 𖤍⤈ منع⌯ الغاء منع
 𖤍⤈ قائمه المنع
 𖤍⤈ حذف قائمه المنع
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ تفعيل⌯ تعطيل ↫ الرابط
 𖤍⤈ تفعيل⌯ تعطيل ↫ الالعاب
 𖤍⤈ تفعيل⌯ تعطيل ↫ الترحيب
 𖤍⤈ تفعيل⌯ تعطيل ↫ التاك للكل
 𖤍⤈ تفعيل⌯ تعطيل ↫ كشف الاعدادات
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ طرد المحذوفين
 𖤍⤈ طرد ↫ بالرد⌯ بالمعرف⌯ بالايدي
 𖤍⤈ كتم⌯ الغاء كتم
@@ -18638,13 +18638,13 @@ local Teext =[[
 𖤍⤈ المكتومين⌯ حذف المكتومين
 𖤍⤈ المقيدين⌯ حذف المقيدين
 𖤍⤈ المحظورين⌯ حذف المحظورين
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ تقييد دقيقه + عدد الدقائق
 𖤍⤈ تقييد ساعه + عدد الساعات
 𖤍⤈ تقييد يوم + عدد الايام
 𖤍⤈ الغاء تقييد ↫ لالغاء التقييد بالوقت
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
-𖤍⤈ [𝘾𝙃 𝙍𝙄𝙎𝙆 ♪ ](https://t.me/SO_RISK)
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
+𖤍⤈ [𝘾𝙃 𝐹𝐼𝑅𝐸 ♪ ](https://t.me/SO_RISK)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -18671,15 +18671,15 @@ return false
 end
 local Teext =[[
 𖤍⤈ اهلا بك في قائمة الاوامر ↫ ⤈ 
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ 💎 ↫ اوامر الحمايه
 𖤍⤈ 💎 ↫ اوامر الادمنيه
 𖤍⤈ 💥 ↫ اوامر المدراء
 𖤍⤈ م4 ↫ اوامر المنشئين
 𖤍⤈ اوامر المطورين🌖
 𖤍⤈ 💭 ↫ اوامر الاعضاء
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
-𖤍⤈ [𝘾𝙃 𝙍𝙄𝙎𝙆 ♪ ](https://t.me/SO_RISK)
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
+𖤍⤈ [𝘾𝙃 𝐹𝐼𝑅𝐸 ♪ ](https://t.me/SO_RISK)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -19237,7 +19237,7 @@ end
 if Text == '/change-names' then
 local Teext =[[
     ❨اوامر الاعضاء ⇊❩  
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
  𖤍⤈    غنيلي ↫حساب العمر   
  𖤍⤈    صورتي ↫نسبه جمالي
  𖤍⤈    نقاطي
@@ -19258,7 +19258,7 @@ local Teext =[[
  𖤍⤈    بوسو ↫بوسها
  𖤍⤈    بتحب دي ↫بتحب ده
  𖤍⤈   بوت الحذف⇔رابط الحذف
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
  
 ]]
 keyboard = {} 
@@ -19267,7 +19267,7 @@ keyboard.inline_keyboard = {
 {text ='⌯القائمه الرائسيه•', callback_data="/change-id"},
 },
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -19306,7 +19306,7 @@ keyboard.inline_keyboard = {
 {text ='⌯ الجوزاء 🌩', callback_data="/zguza"},{text ='⌯ الدلو 🦯', callback_data="/zdlu"},
 },
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19315,7 +19315,7 @@ end
 if Text == '/change-hhh' then
 local Teext =[[ 
 𖤍⤈  اليك قائمه الاسعار في الاسفل ..↑↓
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -19326,17 +19326,17 @@ keyboard.inline_keyboard = {
 {text = 'نبذه عن السورس', callback_data="/change-ghjjgyy"},
 },
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/change-hklp' then
 local Teext =[[
-• سعر تنصيب بوتك علي سورس ريسك⌯
+• سعر تنصيب بوتك علي سورس فاير⌯
 • لتنصيب بوتك بكامل المميزات (30)ج⌯
 ⇣ للتواصل مع المبرمجين اتبع الازرار ⇣
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19355,7 +19355,7 @@ local Teext =[[
 • سعر السيرفر اوبنتو 8 رام (150)ج
 • سعر مصنع مميزات بكامل حقوقك (150)ج
 ⇣ للتواصل مع المبرمجين اتبع الازرار بالأسفل ⇣
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -19368,19 +19368,19 @@ end
 if Text == '/change-ghjjgyy' then
 local Teext =[[
 📬⌯ 𝗮𝗯𝗼𝘂𝘁 𝐭𝐡𝐞 𝐬𝐨𝐮𝐫𝐜𝐞
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𖤍⤈ سورس خاص في حماية المجموعات من التفليش 🚸 . 
 𖤍⤈ تستطيع تنصيب بوتك وتصبح المطور الاساسي 👨🏼‍𖤍⤈ ️.
 𖤍⤈ تستطيع اضافة قناتك اشتراك اجباري في بوتك ⚠️ .
 𖤍⤈ سرعة في اداء البوت ومزايا حصرية فقط لسورسنا 〽️ .
 𖤍⤈ لمعرفة ميزات اكثر عن السورس زور قناة التحديثات .
 𖤍⤈ اطلب بوتك الأن 🌐 .
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 {{text = '𖤍⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/change-hhh"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19398,7 +19398,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/bnada-yquio' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
@@ -19412,22 +19412,22 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/Ajobanf' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '𝘽𝙇𝘼𝘾𝙆 , 𝙒𝙃𝙄𝙏𝙀 ♡︎•',url="t.me/black74white"}},
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝙁𝘼 ♡•',url="t.me/so_alfaa"},{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♡︎•',url="t.me/SO_RISK"}},
-{{text = '𝙎𝙇𝙊𝙒𝙇𝙔 ♡•',url="t.me/a_7_z_a_n"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙇𝙁𝘼 ♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_RISK"}},
+{{text = '𝙎𝙇𝙊𝙒𝙇𝙔 ♡•',url="t.me/SO_FIR"}},
 {{text = '𖤍⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/banfai' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
@@ -19441,7 +19441,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/gqjik' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
@@ -19526,7 +19526,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"}},
 {{text = '𖤍⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19544,7 +19544,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/parlo' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
@@ -19558,22 +19558,22 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/parlo_1' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '𝘽𝙇𝘼𝘾𝙆 , 𝙒𝙃𝙄𝙏𝙀 ♡︎•',url="t.me/black74white"}},
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝙁𝘼 ♡•',url="t.me/so_alfaa"},{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♡︎•',url="t.me/SO_RISK"}},
-{{text = '𝙎𝙇𝙊𝙒𝙇𝙔 ♡•',url="t.me/a_7_z_a_n"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙇𝙁𝘼 ♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_RISK"}},
+{{text = '𝙎𝙇𝙊𝙒𝙇𝙔 ♡•',url="t.me/SO_FIR"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/parlo_12' then
 local Teext =[[
-◉ يمكنك التواصل مع ماديسؤن..↑↓
+◉ يمكنك التواصل مع اسلام ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 
 ]]
@@ -19616,7 +19616,7 @@ local Teext =[[
 الأعمال الملائمة  : موظفي بنك- فنانين- محاسبين-موسيقيين- عمال
 
 إيجابيات برج الثور : صبور- يمكن الاعتماد عليه- محب- من طبعه الإصرار والتصميم- هادئ ويحب الطمأنينة
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19633,7 +19633,7 @@ local Teext =[[
 إيجابيات  برج الجوزاء: ذكي - متقد الذهن - فصيح - لدية روح الشباب - متعدد المواهب - اجتماعي - متأقلم
 
 سلبيات برج الجوزاء : متوتر - غير ثابت على حال - عصبي - ماكر- فضولي
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19664,7 +19664,7 @@ local Teext =[[
 ايجابيات برج الدلو  : ودود، إنساني، صادق، وفي وصاحب ولاء، مبدئي، مبتكر
 
 سلبيات برج الدلو : مستقل وذكي. عنيد، يقف ضد الأمور، مشاكس، غير متوقع التصرفات، غير عاطفي وله استقلاليته.
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19694,7 +19694,7 @@ local Teext =[[
 ايجابيات برج الحوت : صاحب خيال، حساس، عاطفي، لطيف، غير أناني، لا تهمه الماديات، صاحب حدس وبديهة ويتعاطف مع الآخرين.
 
 سلبيات برج الحوت  : مثالي و يتهرب من الواقع، كتوم للأسرار وغامض، إرادته ضعيفة وسهل الانقياد.
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19726,7 +19726,7 @@ local Teext =[[
 ايجابيات برج العقرب: صاحب عزيمة- قوي- عاطفي- ذو حدس- ذو طاقة - مثير - شخصيته جذابة- كتوم للأسرار
 
 سلبيات برج العقرب : كثير الرفض- يحب السيطرة - محب للتملك- غيور -عنيد.
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19755,7 +19755,7 @@ local Teext =[[
 
 ايجابيات : متفائل، محب للحرية، مرح، له روح مرحة جميلة، صادق، مستقيم، ذكي وصاحب فلسفة
 سلبيات : متفائل بصورة عمياء، مهمل، غير مسؤول، سطحي، غير لبق، قلق
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19787,7 +19787,7 @@ local Teext =[[
 ايجابيات برج الميزان : دبلوماسي، مؤدب، رومانسي، ساحر، سهل النقياد، اجتماعي، صاحب مبادئ ومسالم
 
 سلبيات برج الميزان : متردد، قابل للتغير، ساذج، يتأثر بسرعة، منطوي على نفسه.
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19818,7 +19818,7 @@ local Teext =[[
 الاعمال الملائمة : كيميائيين- أطباء-محققين- أخصائيي تغذية- أطباء بيطريين- مدراء- مقاولين
 ايجابيات برج العذراء : متواضع، خجول، دقيق، يمكن الاعتماد عليه، عملي، مجتهد، ذكي ويميل إلى التحليل
 سلبيات برج العذراء : سريع الانزعاج، كثير القلق، كثير الانتقاد، قاسي، يسعى نحو الكمالية ومحافظ
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19846,7 +19846,7 @@ local Teext =[[
 الاعمال الملائمة : مدراء، مهندسين معماريين، مخترعين، مدرسين، رياضيين ومدراء
 
 ايجابيات برج الأسد : كريم، دافئ القلب، مبدع، حماسي، واسع العقل، وفي محب
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19875,7 +19875,7 @@ local Teext =[[
 الاعمال الملائمة : أطباء، صيادلة، مدرسوريا، أخصائيو تغذية، شيف، سماسرة
 
 ايجابيات برج السرطان : عاطفي، محب، صاحب حدس وبديهة، صاحب خيال واسع
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19903,7 +19903,7 @@ local Teext =[[
 الأعمال الملائمة : رجل إطفاء ، طبيب ، ميكانيكي ، طبيب أسنان ، لاعب رياضي محترف أو رجل أعمال
 سلبيات برج الحمل : أناني - سريع الغضب - متهور - عديم الصبر – الطيش
   مميّزات برج الحمل ١.١ الثقة العالية بالنّفس ١.٢ روح القيادة ١.٣ الطاقة الإيجابيّة ١.٤ الشجاعة ١.٥ الإبداع ١.٦ الطّموح ١.٧ حبّ المغامرة ١.٨ الإخلاص ١.٩ الاستقلاليّة ٢ عيوب برج الحمل ٢.١ الأنانيّة ٢.٢ حبّ لفت الانتباه ٢.٣ الغضب ٢.٤ احتكار الحديث ٢.٥ التسرّع
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -19933,7 +19933,7 @@ local Teext =[[
 ايجابيات برج الجدي: عملي، عاقل- طموح- منظم- صبور- حذر- صاحب روح مرحة ومتحفظ
 
 سلبيات برج الجدي : متشائم- متعلق بالأقدار- بائس- حاقد، متمسك بالتقاليد أكثر من اللازم وجامد.
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 
 ]]
 keyboard = {} 
@@ -19958,7 +19958,7 @@ local Teext =[[
 ❣- برج الميزان: من 9/23 - الى 10/22•
 ❣- برج العقرب: من 10/23 - الى 11/21•
 ❣- برج القوس: من 11/22 - الى 12/21•
-✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
+✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -20189,7 +20189,7 @@ bot_data:del(ban_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -20200,7 +20200,7 @@ bot_data:del(ban_id..'edits'..msg.chat_id_..msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -20812,7 +20812,7 @@ bot_data:del(ban_id.."siria:allM"..msg.chat_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -20824,7 +20824,7 @@ bot_data:del(ban_id..'edits'..msg.chat_id_..msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪', url="t.me/SO_RISK"},
+{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_RISK"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -22130,7 +22130,7 @@ bot_data:srem(ban_id..'S00F4:MN:TF'..msg.chat_id_, data.sender_user_id_)
 bot_data:srem(ban_id..'Special:User'..msg.chat_id_, data.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 𖤍⤈  تم تنزيلك من جميع الرتب")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22140,13 +22140,13 @@ if bot_data:get(ban_id..'Set:array'..data.sender_user_id_..':'..Chat_id) == 'tru
 bot_data:del(ban_id..'Set:array'..data.sender_user_id_..':'..Chat_id)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *𖤍⤈تم حفظ الردود بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/DRAGONTEAM'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/DRAGONTEAM'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *𖤍⤈تم تنفيذ الامر سابقا*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22158,7 +22158,7 @@ local idchci = "-100"..idch
 local animation = Text:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="*𖤍⤈ تم الغاء منعها بنجاح*"
 inline = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -22169,7 +22169,7 @@ local idchci = bot_data:get(ban_id.."Filter:msg")
 local photo = Text:match("^pito(.*)$")
 local Text ="*𖤍⤈ تم الغاء منعها بنجاح*"
 inline = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -22181,7 +22181,7 @@ local idchci = "-100"..idch
 local Sticker = Text:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="*𖤍⤈ تم الغاء منعه بنجاح*"
 inline = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -22191,7 +22191,7 @@ if Text and Text:match("^delallSticker(.*)$") then
 local delallSticker = Text:match("^delallSticker(.*)$")
 local Text ="*𖤍⤈ تم الغاء منع كل المتحركات*"
 inline = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -22204,7 +22204,7 @@ if Text and Text:match("^delallanimation(.*)$") then
 local delallmation = Text:match("^delallanimation(.*)$")
 local Text ="*𖤍⤈ تم الغاء منع كل المتحركات*"
 inline = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -22217,7 +22217,7 @@ if Text and Text:match("^delallph(.*)$") then
 local delallph = Text:match("^delallph(.*)$")
 local Text ="*𖤍⤈ تم الغاء منع كل الصور*"
 inline = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -22231,13 +22231,13 @@ if bot_data:get(ban_id..'Set:array'..data.sender_user_id_..':'..Chat_id) == 'tru
 bot_data:del(ban_id..'Set:array'..data.sender_user_id_..':'..Chat_id)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *𖤍⤈︙تم حفظ الردود بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝘼𝙉𝙐𝘽𝙄𝙎 𝄬',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" *𖤍⤈︙تم تنفيذ الامر سابقا*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22247,13 +22247,13 @@ if bot_data:get(ban_id..'Set:array'..data.sender_user_id_..':'..Chat_id) == 'tru
 bot_data:del(ban_id..'Set:array'..data.sender_user_id_..':'..Chat_id)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 𖤍⤈ ︙تم حفظ الردود بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 𖤍⤈ ︙تم تنفيذ الامر سابقا*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22263,28 +22263,28 @@ tdcli_function({ID="ChangeChatMemberStatus",chat_id_=Chat_id,user_id_=data.sende
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 𖤍⤈ ︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if (data and data.code_ and data.code_ == 3) then 
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 𖤍⤈ ︙البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if data and data.code_ and data.code_ == 400 and data.message_ == "USER_ADMIN_INVALID" then 
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 𖤍⤈ ︙عذرا لا استطيع طرد ادمنية الجروب*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if data and data.ID and data.ID == 'Ok' then
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" 𖤍⤈ ︙تم الطرد بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22294,7 +22294,7 @@ if Text == 'noKikedMe'..data.sender_user_id_ then
 local Text ="𖤍⤈  تم الغاء الأمر بنجاح "
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22303,7 +22303,7 @@ bot_data:setex(ban_id.."Send:Bc:Grops" .. Chat_id .. ":" .. data.sender_user_id_
 local Text ="𖤍⤈  ارسل الاذاعة لارسلها الي الجروبات "
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22312,7 +22312,7 @@ bot_data:setex(ban_id.."Send:Bc:Pv" .. Chat_id .. ":" .. data.sender_user_id_, 6
 local Text ="𖤍⤈  ارسل الاذاعة لارسلها الي الجروبات "
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22321,7 +22321,7 @@ bot_data:setex(ban_id.."Siria_aza3h3" .. Chat_id .. ":" .. data.sender_user_id_,
 local Text ="𖤍⤈  ارسل الاذاعة لارسلها الي المطور الاساسي و المساعد "
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22330,7 +22330,7 @@ bot_data:sadd(ban_id..'Sudo:User', result.sender_user_id_)
 local Text ="𖤍⤈  تم الغاء الأمر بنجاح "
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙄𝙎𝙆 ♪',url='http://t.me/SO_RISK'}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪',url='http://t.me/SO_RISK'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -22526,7 +22526,7 @@ keyboard.inline_keyboard = {
 {text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/UU_f7"},
 },
 {
-{text = '𝙈𝙔 𝘾𝙃𝘼𝙉𝙀𝙀𝙀𝙇  ', url="t.me/a_7_z_a_n"},
+{text = '𝙈𝙔 𝘾𝙃𝘼𝙉𝙀𝙀𝙀𝙇  ', url="t.me/SO_FIR"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -22809,7 +22809,7 @@ end
 if #list == 0 then
 t = " 𖤍⤈  لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\n✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪\n 𖤍⤈  تم التعديل على الميديا\n 𖤍⤈  الشخص الي قام بالتعديل\n 𖤍⤈  ايدي الشخص ◂ '..result.sender_user_id_..'\n 𖤍⤈  معرف الشخص ↫{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 𖤍⤈  تم التعديل على الميديا\n 𖤍⤈  الشخص الي قام بالتعديل\n 𖤍⤈  ايدي الشخص ◂ '..result.sender_user_id_..'\n 𖤍⤈  معرف الشخص ↫{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
