@@ -178,7 +178,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {0000000000,0000000000,2096660722,0000000000}   
+dev_users = {0000000000,0000000000,2096660722,1859656976}   
 function Developers(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_users) do  
@@ -199,7 +199,7 @@ end
 end  
 return DRAGON  
 end 
-sudo_users = {SUDO,0000000000,0000000000,2096660722,0000000000}   
+sudo_users = {SUDO,0000000000,0000000000,2096660722,1859656976}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -350,7 +350,7 @@ if tonumber(user_id) == tonumber(0000000000) then
 var = true 
 elseif tonumber(user_id) == tonumber(2096660722) then
 var = true  
-elseif tonumber(user_id) == tonumber(0000000000) then
+elseif tonumber(user_id) == tonumber(1859656976) then
 var = true  
 elseif tonumber(user_id) == tonumber(0000000000) then
 var = true  
@@ -398,8 +398,8 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(2096660722) then  
 var = 'المبرمج فاير'
-elseif tonumber(user_id) == tonumber(0000000000) then
-var = 'المبرمج احمد رايلي'
+elseif tonumber(user_id) == tonumber(1859656976) then
+var = 'مطور السورس⏎عــلـام彡'
 elseif tonumber(user_id) == tonumber(0000000000) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(0000000000) then
@@ -1804,7 +1804,7 @@ end
 if text == "/start" then
 if not msa3d(msg) then
 if not Devban(msg) then
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'سوريا') 
+local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'اسلام') 
 local DRAGON_Msg = { 
 ' ✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n🌐╢ وظيفتي حماية المجموعات\n✅╢ لتفعيل البوت عليك اتباع مايلي \n🔘╢ أضِف البوت إلى مجموعتك\n⚡️╢ ارفعهُ » مشرف\n⬆️╜ سيتم ترقيتك مالك في البوت لاوامر التسليه اضغط /free او اظهار الكيب\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪ـــــ ',
 } 
@@ -3138,7 +3138,7 @@ end,nil)
 end,nil)
 end
 
-if text and text:match("^سوريا$") or text and text:match("^siria$") or text and text:match("^siria$") then
+if text and text:match("^اسلام$") or text and text:match("^siria$") or text and text:match("^siria$") then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 local Name1 = result.first_name_
@@ -3236,7 +3236,7 @@ end
 if msg.content_.ID == "MessageChatAddMembers" then 
 if msg.content_.members_[0].id_ == tonumber(ban_id) then 
 print("it is Bot")
-N = (bot_data:get(ban_id.."Name:Bot") or "سوريا")
+N = (bot_data:get(ban_id.."Name:Bot") or "اسلام")
 tdcli_function ({ID = "GetUser",user_id_ = ban_id,},function(arg,data) 
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = ban_id,offset_ = 0,limit_ = 1},function(extra,result,success) 
 if result.photos_[0] then
@@ -4340,7 +4340,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_f7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'اسلام مطور السورس' or text == 'اسلام' or text == 'مطور السورس' or text == 'فاير' then
+if text == 'اسلام مبرمج السورس' or text == 'اسلام' or text == 'مطور السورس' or text == 'فاير' then
 local Text = [[
 ◉ يمكنك التواصل معي..↑↓
 ◉ عن طريق معرفي بلاسفل..↑↓
@@ -4348,8 +4348,8 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = ' 𝐷𝐸𝑉 𝐸𝑆𝐿𝐴𝑀 ◉',url="t.me/UU_f7"}},
-{{text ='⌯الــقــنــوات•', callback_data="/Ajotaff"},{text ='⌯الــبــارات•', callback_data="/taffai"}},  
-{{text ='⌯الــبــوتــات•', callback_data="/tofgqjik"}},
+{{text ='⌯الــقــنــوات•', callback_data="/SO_FIR"},{text ='⌯الــبــارات•', callback_data="/mkislam2"}},  
+{{text ='⌯الــبــوتــات•', callback_data="/mkfir4bot"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_f7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4951,7 +4951,7 @@ local vsiriav_Msg = {
   "تتوقع إنك بتتزوج اللي تحبه؟ ",
   "ما هو أمنيتك؟ ",
   "وين تشوف نفسك بعد خمس سنوات؟ ",
-  "هل انت حرامي تويت بتعت سوريا؟ ",
+  "هل انت حرامي تويت بتعت اسلام؟ ",
   "لو خيروك تقدم الزمن ولا ترجعه ورا؟ ",
   "لعبة قضيت وقتك فيه بالحجر المنزلي؟ ",
   "تحب تطق الميانة ولا ثقيل؟ ",
@@ -4959,7 +4959,7 @@ local vsiriav_Msg = {
   "اول ماتصحى من النوم مين تكلمه؟ ",
   "عندك الشخص اللي يكتب لك كلام كثير وانت نايم؟ ",
   "قد قابلت شخص تحبه؟ وولد ولا بنت؟ ",
-   "هل انت تحب سوريا؟ ",
+   "هل انت تحب اسلام؟ ",
 "اذا قفطت احد تحب تفضحه ولا تستره؟ ",
   "كلمة للشخص اللي يسب ويسطر؟ ",
   "آية من القران تؤمن فيه؟ ",
@@ -5635,7 +5635,7 @@ if tonumber(result.sender_user_id_) == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1443455396) then  
+if tonumber(result.sender_user_id_) == tonumber(1859656976) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5643,7 +5643,7 @@ if tonumber(result.sender_user_id_) == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(01062069438) then  
+if tonumber(result.sender_user_id_) == tonumber(1859656976) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5693,7 +5693,7 @@ if result.id_ == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(0000000000) then
+if result.id_ == tonumber(1859656976) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -5749,7 +5749,7 @@ if tonumber(userid) == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(0000000000) then  
+if tonumber(userid) == tonumber(1859656976) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5803,7 +5803,7 @@ if tonumber(result.sender_user_id_) == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(0000000000) then  
+if tonumber(result.sender_user_id_) == tonumber(1859656976) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -5852,8 +5852,8 @@ if result.id_ == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(0000000000) then
-send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك كتم مبرمج السورس \n")
+if result.id_ == tonumber(1859656976) then
+send(msg.chat_id_, msg.id_, " 𖤍⤈  لا يمكنك كتم مطور السورس \n")
 return false 
 end
 if result.id_ == tonumber(2096660722) then
@@ -5905,7 +5905,7 @@ if tonumber(userid) == tonumber(2096660722) then
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(0000000000) then  
+if tonumber(userid) == tonumber(1859656976) then  
 send(msg.chat_id_, msg.id_, " 𖤍⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -7707,7 +7707,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n 𖤍⤈  اهلا بك في متجر ملفات سوريا\n 𖤍⤈  ملفات السورس ↓\n◤━───━??𝗼𝗼𝗼𝗻━───━◥\n\n"
+local TextS = "\n 𖤍⤈  اهلا بك في متجر ملفات اسلام\n 𖤍⤈  ملفات السورس ↓\n◤━───━??𝗼𝗼𝗼𝗻━───━◥\n\n"
 local TextE = "\n✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪\n 𖤍⤈  علامة تعني { ✔️ } ملف مفعل\n 𖤍⤈  علامة تعني { ✖ } ملف معطل\n 𖤍⤈  قناة سورس فاير↓\n".." 𖤍⤈  [اضغط هنا لدخول](t.me/SO_FIR) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -19871,7 +19871,7 @@ local Teext =[[
 
 يتوافق مع : برج العقرب ، برج الحوت ،برج الجدي ،برج الثور
 
-الاعمال الملائمة : أطباء، صيادلة، مدرسوريا، أخصائيو تغذية، شيف، سماسرة
+الاعمال الملائمة : أطباء، صيادلة، مدراسلام، أخصائيو تغذية، شيف، سماسرة
 
 ايجابيات برج السرطان : عاطفي، محب، صاحب حدس وبديهة، صاحب خيال واسع
 ✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
@@ -21015,7 +21015,7 @@ bot_data:set(ban_id.."lock:Bot:kick"..msg.chat_id_,'del')
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𖤍⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
+{text = '𖤍⤈ ??𝙰𝙲𝙺↵', callback_data="/help8"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -22443,7 +22443,7 @@ if (text and text == "تفعيل اوامر التسليه") then
 send(msg.chat_id_, msg.id_, ' 𖤍⤈   تم تفعيل اوامر التسليه')
 bot_data:del(ban_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (bot_data:get(ban_id..'Name:Bot') or 'سوريا')
+local Name_Bot = (bot_data:get(ban_id..'Name:Bot') or 'اسلام')
 if not bot_data:get(ban_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
@@ -22510,19 +22510,19 @@ xl = 'نسبه رجوله '..text..' هي : \n '..sendnuj..'%'
 send(msg.chat_id_, msg.id_,xl) 
 bot_data:del(ban_id..":"..msg.sender_user_id_..":rjo_Bots"..msg.chat_id_)
 end
-if text == "اسلام" or text == "المبرمج اسلام " then
+if text == "علام" or text == "المطور علام " then
 local TEXT_SUD = bot_data:get(ban_id..'DRAGON:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
 else
-tdcli_function ({ID = "GetUser",user_id_ = 2096660722,},function(arg,result) 
+tdcli_function ({ID = "GetUser",user_id_ = 1859656976,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '𓌹 ᯓ مـبـرمـج الـسـورس 𓌺\n['..result.first_name_..'](t.me/UU_f7)\n'
+local Name = '𓌹 ᯓ مطور السورس 𓌺\n['..result.first_name_..'](t.me/FACKYOOOOOU)\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/UU_f7"},
+{text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/FACKYOOOOOU"},
 },
 {
 {text = '𝙈𝙔 𝘾𝙃𝘼𝙉𝙀𝙀𝙀𝙇  ', url="t.me/SO_FIR"},
@@ -22533,11 +22533,11 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.
 else
 sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
  end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 2096660722, offset_ = 0, limit_ = 1 }, taha, nil)
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 1859656976, offset_ = 0, limit_ = 1 }, taha, nil)
 end,nil)
 end
 end
-if text == "المبرمج اسلام" or text == "اسلام" then
+if text == "المطور علام" or text == علام" then
 local TEXT_SUD = bot_data:get(ban_id..'DRAGON:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
@@ -22545,11 +22545,11 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = 1645561253,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '𓌹 ᯓ مـطـور الـسـورس 𓌺\n['..result.first_name_..'](t.me/UU_f7)\n'
+local Name = '𓌹 ᯓ مطور السورس 𓌺\n['..result.first_name_..'](t.me/FACKYOOOOOU)\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/UU_f7"},
+{text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/FACKYOOOOOU"},
 },
 {
 {text = '𝙈𝙔 𝘾𝙃𝘼𝙉𝙀𝙀𝙀𝙇  ', url="t.me/SO_FIR"},
