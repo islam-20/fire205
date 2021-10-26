@@ -19431,7 +19431,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀  . .',url="t.me/https://t.me/mkislam2"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 . .',url="t.me/https://t.me/mkislam2"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19485,7 +19485,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 .',url="t.me/https://t.me/mkislam2"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 .',url="https://t.me/mkislam2"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/tafa-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19534,7 +19534,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='⌯𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"},{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈 ◉', url="t.me/UU_f7"}},
+{{text ='⌯𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"},{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈 ◉', url="t.me/FACKYOOOOOU"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19560,8 +19560,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐅𝐈𝐑𝐄♡•',url="t.me/SO_FIR"}},
-{{text = '𝐅𝐈𝐑𝐄 ♡•',url="t.me/SO_FIR"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 ♡•',url="t.me/mkislam2"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
