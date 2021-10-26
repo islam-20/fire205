@@ -4333,8 +4333,8 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄  ◉',url="t.me/UU_f7"}},
-{{text ='⌯الــقــنــوات•', callback_data="/SO_FIR"},{text ='⌯الــبــارات•', callback_data="/mkislam2"}},  
-{{text ='⌯الــبــوتــات•', callback_data="/mkfir4bot"}},
+{{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
+{{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_f7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -17735,7 +17735,7 @@ datainline = {
 {{text =Mo,callback_data=data.sender_user_id_.."unmod"..userid},{text = 'ادمن ',callback_data=data.sender_user_id_.."unmod"..userid}},
 {{text =Sp,callback_data=data.sender_user_id_.."unSpecial"..userid},{text = 'مميز ',callback_data=data.sender_user_id_.."unSpecial"..userid}},
 {{text = 'رجوع',callback_data=data.sender_user_id_.."Bbk"..userid}},
-{{text = '???? 𝐹𝐼𝑅𝐸', url="t.me/SO_FIR"}},
+{{text = '???? ??𝐼𝑅𝐸', url="t.me/SO_FIR"}},
 }
 elseif BasicConstructor(data) then
 datainline = {
