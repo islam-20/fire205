@@ -19405,7 +19405,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ⋆',url="t.me/UU_f7"}},
-{{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
+{{text ='⌯الــبارات•', callback_data="/Ajobanf"},{text ='⌯الــقنوات•', callback_data="/banfai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19418,8 +19418,6 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '𝘽𝙇𝘼𝘾𝙆 , 𝙒𝙃𝙄𝙏𝙀 ♡︎•',url="t.me/black74white"}},
-{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐅𝐈𝐑𝐄♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_FIR"}},
 {{text = '𝐅𝐈𝐑𝐄 ♡•',url="t.me/SO_FIR"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
@@ -19433,8 +19431,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝑀َ𝐴𝐷ِ𝐼𝑆ُ𝑂𝑁ْ .',url="t.me/https://t.me/joinchat/t3denQ2NYhw2YjVk"}},
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝐾َ𝐴𝑀َ𝐴𝐿ْ .',url="t.me/https://t.me/joinchat/D0n5owlY8Mo1YWU8"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀  . .',url="t.me/https://t.me/mkislam2"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19461,7 +19458,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉',url="t.me/UU_f7"}},
+{{text = '𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉',url="t.me/FACKYOOOOOU"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajotaff"},{text ='⌯الــبــارات•', callback_data="/taffai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/tofgqjik"}},
 }
@@ -19488,7 +19485,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ 𝐵َ𝐴َ𝑅َْ 𝑀َ𝐴𝐷ِ𝐼𝑆ُ𝑂𝑁ْ .',url="t.me/https://t.me/joinchat/t3denQ2NYhw2YjVk"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 .',url="t.me/https://t.me/mkislam2"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/tafa-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19550,7 +19547,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 .',url="https://t.me/mkislam2"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸 𝐹𝐼𝑅𝐸 𓆩𓅄𓆪 .',url="https://t.me/SO_FIR"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/mkislam2"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19563,8 +19560,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘿𝙄𝙁𝙁𝙀𝙍𝙀𝙉𝙏 𝙒𝙊𝙍𝙇𝘿 ♡•',url="t.me/U_C_Z"},{text = '𝘽𝙇𝘼𝘾𝙆 , 𝙒𝙃𝙄𝙏𝙀 ♡︎•',url="t.me/black74white"}},
-{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐅𝐈𝐑𝐄♡•',url="t.me/SO_FIR"},{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♡︎•',url="t.me/SO_FIR"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐅𝐈𝐑𝐄♡•',url="t.me/SO_FIR"}},
 {{text = '𝐅𝐈𝐑𝐄 ♡•',url="t.me/SO_FIR"}},
 {{text = '◉𝙱𝙰𝙲𝙺↵', callback_data="/parlo_123"}},
 }
@@ -19592,7 +19588,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒂𝒉𝒎𝒆𝒅 𝒆𝒍𝒏𝒒𝒚𝒃 𖤐',url="t.me/AHMED_ELNQYB"}},
+{{text = '𝐷𝐸𝑉 𝐹𝐼𝑅𝐸 𝅘𝅥𝅯 ',url="t.me/UU_f7"}},
 {{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
 }
