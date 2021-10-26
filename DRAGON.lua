@@ -19341,7 +19341,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"},{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉', url="t.me/UU_f7"}},
+{{text ='𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/UU_f7"},{text ='𝘿𝙀𝙑 𝘼𝙇𝙇𝘼𝙈◉', url="t.me/FACKYOOOOOU"}},
 {{text = '˹ᴛᴀᴡᴏsʟ˼',url="t.me/E_H_M_BOT"}}, 
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲??↵', callback_data="/change-hhh"}},
 }
