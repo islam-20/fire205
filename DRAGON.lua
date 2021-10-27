@@ -5425,7 +5425,7 @@ tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(ms
 end
 end
 end
--- Source siria --
+-- 𝑆𝑂𝐔𝑅𝐶𝐸 𝐹𝐼𝑅𝐸 𝅘𝅥𝅯  --
 if text == 'نبذا' or text == '↫ نبذا ♡' then
 local vsiriav_Msg = { 
 '- Nothing stops him who wants you .',
@@ -5442,7 +5442,7 @@ ban = math.random(2,1201);
 local Text ='*♡︙تم اختيار مقطع الميمز لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '♡ Siria team .',url="t.me/SO_FIR"}},
+{{text = '♡ 𝑆𝑂𝐔𝑅𝐶𝐸 𝐹𝐼𝑅𝐸 𝅘𝅥𝅯  .',url="t.me/SO_FIR"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot" ..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/MemzDavid/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5472,7 +5472,7 @@ ban = math.random(4,1122);
 local Text ='*♡︙تم اختيار الصوره لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '♡ Siria team .',url="t.me/SO_FIR"}},
+{{text = '♡ 𝑆𝑂𝐔𝑅𝐶𝐸 𝐹𝐼𝑅𝐸 𝅘𝅥𝅯  .',url="t.me/SO_FIR"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot" ..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/PhotosDavid/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5482,7 +5482,7 @@ ban = math.random(3,1002);
 local Text ='*♡︙تم اختيار صورة الانمي لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '♡ Siria team .',url="t.me/SO_FIR"}},
+{{text = '♡ 𝑆𝑂𝐔𝑅𝐶𝐸 𝐹𝐼𝑅𝐸 𝅘𝅥𝅯  .',url="t.me/SO_FIR"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AnimeDavid/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5492,7 +5492,7 @@ ban = math.random(45,125);
 local Text ='*♡︙تم اختيار الفلم لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '♡ Siria team .',url="t.me/SO_FIR"}},
+{{text = '♡ 𝑆𝑂𝐔𝑅𝐶𝐸 𝐹𝐼𝑅𝐸 𝅘𝅥𝅯  .',url="t.me/SO_FIR"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot" ..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MoviesDavid/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5502,7 +5502,7 @@ ban = math.random(2,54);
 local Text ='*♡︙تم اختيار المسلسل لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '♡ Siria team .',url="t.me/SO_FIR"}},
+{{text = '♡ 𝑆𝑂𝐔𝑅𝐶𝐸 𝐹𝐼𝑅𝐸 𝅘𝅥𝅯  .',url="t.me/SO_FIR"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot" ..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SeriesDavid/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -7675,7 +7675,7 @@ bot_data:hset(ban_id.."flooding:settings:"..msg.chat_id_ ,"flood",'del')
 send(msg.chat_id_, msg.id_,' 𓆩𓅄𓆪⤈  تم قفل التكرار')
 elseif text == 'قفل التكرار بالتقييد' and Mod(msg) then 
 bot_data:hset(ban_id.."flooding:settings:"..msg.chat_id_ ,"flood",'keed')  
-send(msg.chat_id_, msg.id_,' 𓆩𓅄𓆪⤈  تم قفل التكرار بالتقييد')
+send(msg.chat_id_, msg.id_,' 𓆩??𓆪⤈  تم قفل التكرار بالتقييد')
 elseif text == 'قفل التكرار بالكتم' and Mod(msg) then 
 bot_data:hset(ban_id.."flooding:settings:"..msg.chat_id_ ,"flood",'mute')  
 send(msg.chat_id_, msg.id_,' 𓆩𓅄𓆪⤈  تم قفل التكرار بالكتم')
@@ -15873,7 +15873,7 @@ Msᴀɢ ~ #msgs
 [[
  𝚄𝚂𝙴?? 𓄹𓄼 #username
  𝙸𝙳  𓄹𓄼 #id 
- 𝚂𝚃𝙰 𓄹𓄼 #stast 
+ ??𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
  𝗖𝗛 - ❨@SO_FIR❩ 𓆩𓅄𓆪⤈ 
 ]],
