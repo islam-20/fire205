@@ -4304,7 +4304,7 @@ keyboard.inline_keyboard = {
 {{text ='⌯ اضغط لاضافه البوت لمجمعتك⌯' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MADI_PICK/35&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/pickislam/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -16300,7 +16300,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 𝗖𝗛 - ❨@SO_FIR❩ 𓆩𓅄𓆪⤈ 
 ]],
 [[
-➜𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 : #username
+➜𝗨𝗦𝗘𝗥??𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔??𝗦 : #stast
 ➜𝗜?? : #id
