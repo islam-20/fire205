@@ -178,7 +178,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {0000000000,1265057352,2064976240,1859656976}   
+dev_users = {0000000000,1265057352,2112342503,1859656976}   
 function Developers(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_users) do  
@@ -189,7 +189,7 @@ end
 return DRAGON  
 end 
 
-dev_islam = {2064976240} 
+dev_islam = {2112342503} 
 function Devsiria(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_siria) do  
@@ -199,7 +199,7 @@ end
 end  
 return DRAGON  
 end 
-sudo_users = {SUDO,1265057352,0000000000,2064976240,1859656976}   
+sudo_users = {SUDO,1265057352,0000000000,2112342503,1859656976}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -348,7 +348,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1265057352) then  
 var = true 
-elseif tonumber(user_id) == tonumber(2064976240) then
+elseif tonumber(user_id) == tonumber(2112342503) then
 var = true  
 elseif tonumber(user_id) == tonumber(1859656976) then
 var = true  
@@ -396,7 +396,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(2064976240) then  
+if tonumber(user_id) == tonumber(2112342503) then  
 var = 'المبرمج فاير☬'
 elseif tonumber(user_id) == tonumber(1859656976) then
 var = 'مطور السورس⏎عــلـام彡'
@@ -3164,7 +3164,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(2064976240,"𓆩𓅄𓆪⤈ . هناك شخص يريدك يا سيدي اسلام\n𓆩𓅄𓆪⤈ الشخص  {"..Name.."}\n𓆩𓅄𓆪⤈ اسم الجروب {"..NameChat.."}\n𓆩𓅄𓆪⤈ ايدي الجروب { `"..msg.chat_id_.."` }\n𓆩𓅄𓆪⤈ رابط الجروب \n [ "..LinkGroup.." ]\n    𓆩𓅄𓆪⤈ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(2112342503,"𓆩𓅄𓆪⤈ . هناك شخص يريدك يا سيدي اسلام\n𓆩𓅄𓆪⤈ الشخص  {"..Name.."}\n𓆩𓅄𓆪⤈ اسم الجروب {"..NameChat.."}\n𓆩𓅄𓆪⤈ ايدي الجروب { `"..msg.chat_id_.."` }\n𓆩𓅄𓆪⤈ رابط الجروب \n [ "..LinkGroup.." ]\n    𓆩𓅄𓆪⤈ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -5631,7 +5631,7 @@ if bot_data:sismember(ban_id..'msa3d:ban', result.sender_user_id_) then
 send(msg.chat_id_, msg.id_, "*𓆩𓅄𓆪⤈  لا تستطيع حظره او كتمه عام*")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2064976240) then  
+if tonumber(result.sender_user_id_) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5639,7 +5639,7 @@ if tonumber(result.sender_user_id_) == tonumber(1859656976) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2064976240) then  
+if tonumber(result.sender_user_id_) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5689,7 +5689,7 @@ if bot_data:sismember(ban_id.."msa3d:ban", result.id_) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مساعد عام")
 return false 
 end
-if result.id_ == tonumber(2064976240) then
+if result.id_ == tonumber(2112342503) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -5741,11 +5741,11 @@ if bot_data:sismember(ban_id.."msa3d:ban", userid) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مساعد عام")
 return false 
 end
-if tonumber(userid) == tonumber(2064976240) then  
+if tonumber(userid) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(2064976240) then  
+if tonumber(userid) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5795,11 +5795,11 @@ if bot_data:sismember(ban_id.."msa3d:ban", result.sender_user_id_) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مساعد عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2064976240) then  
+if tonumber(result.sender_user_id_) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2064976240) then  
+if tonumber(result.sender_user_id_) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -5848,7 +5848,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(2064976240) then
+if result.id_ == tonumber(2112342503) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
@@ -5856,7 +5856,7 @@ if result.id_ == tonumber(1859656976) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا يمكنك كتم مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(2064976240) then
+if result.id_ == tonumber(2112342503) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
@@ -5901,7 +5901,7 @@ if tonumber(userid) == tonumber(ban_id) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(2064976240) then  
+if tonumber(userid) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -5909,7 +5909,7 @@ if tonumber(userid) == tonumber(1859656976) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(2064976240) then  
+if tonumber(userid) == tonumber(2112342503) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
