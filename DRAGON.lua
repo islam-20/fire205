@@ -750,10 +750,10 @@ function sendin(chat,msgid,user,user_id)
 local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. chat ..'&user_id='.. user_id)
 local Json_Info = JSON.decode(Chek_Info)
 if Json_Info.result.can_change_info == true then
-info = '❨ ❌ ❩' 
+info = '❨ ✔️ ❩' 
 infoo = 'false' 
 else 
-info = '❨ ✔️ ❩' 
+info = '❨ ❌ ❩' 
 infoo = 'true' 
 end
 if Json_Info.result.can_delete_messages == true then
