@@ -4332,7 +4332,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄  ◉',url="t.me/UU_f7"}},
+{{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄  ◉',url="t.me/QueenfOO"}},
 {{text ='⌯الــقــنــوات•', callback_data="/parlo"},{text ='⌯الــبــارات•', callback_data="/parlo_1"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/parlo_12"}},
 }
