@@ -5569,7 +5569,7 @@ keyboard.inline_keyboard = {
 {{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼𝑅𝐸 ♪', url="t.me/SO_FIR"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/pickislam1/2/37&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MADI_PICK/37&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --------------------------------------------------------------------------------------------------------------
 if text == 'تحديث' and Devban(msg) then    
@@ -10630,7 +10630,7 @@ send(msg.chat_id_, msg.id_, ' 𓆩𓅄𓆪⤈  تم تنزيل جميع الار
 end
 if text == ("تاك للارامل") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Bro:User'..msg.chat_id_)
-t = "\n 𓆩𓅄𓆪⤈  قائمة ارامل الجروب \n✪❯─────「𝐹??????」─────❮✪\n"
+t = "\n 𓆩𓅄𓆪⤈  قائمة ارامل الجروب \n✪❯─────「𝐹𝐼????」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -14503,7 +14503,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  ??????𝐸 ♪', url="t.me/SO_FIR"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹????𝐸 ♪', url="t.me/SO_FIR"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/D_V1_D/94&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15440,7 +15440,7 @@ local List = {
 [[
 ➼ : ??𝐷 𖠀 #id . ♡
 ➼ : 𝑈𝑆𝐸𝑅 𖠀 #username .♡
-➼ : 𝑀𝑆𝐺?? ?? #msgs .♡
+➼ : 𝑀𝑆𝐺𝑆 ?? #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 ?? #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
 ➼ : 𝗖𝗛 - ❨@SO_FIR❩ 𓆩𓅄𓆪⤈ .
