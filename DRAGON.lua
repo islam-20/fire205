@@ -4312,12 +4312,12 @@ end
 
 if text == 'نيني' or text == 'كوين' or text == '8ث9سون' then
 local Text = [[
-◉ يمكنك التواصل مع اسلام ..↑↓
+◉ يمكنك التواصل مع كوين ..↑↓
 ◉ عن طريق المعرف بلاسفل..↑↓
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐷𝐸𝑉 𝐅𝐈𝐑𝐄 ◉',url="t.me/QueenfOO"}},
+{{text = '𝑄𝑈𝐸𝐸𝑁 • 🕷️๖',url="t.me/QueenfOO"}},
 {{text ='⌯الــقــنــوات•', callback_data="/Ajobanf"},{text ='⌯الــبــارات•', callback_data="/banfai"}},  
 {{text ='⌯الــبــوتــات•', callback_data="/gqjik"}},
 }
@@ -12388,7 +12388,7 @@ usertext = '\n 𓆩𓅄𓆪⤈  الـعـضو   ↫ ['..result.title_..'](t.me/
 status  = '\n 𓆩𓅄𓆪⤈  تم الغاء تقيد'
 texts = usertext..status
 else
-texts = ' 𓆩𓅄𓆪⤈  لا يوجد حساب بهاذا المعرف'
+texts = ' 𓆩𓅄??⤈  لا يوجد حساب بهاذا المعرف'
 end
 send(msg.chat_id_, msg.id_, texts)
 end
@@ -15440,7 +15440,7 @@ local List = {
 [[
 ➼ : ??𝐷 𖠀 #id . ♡
 ➼ : 𝑈𝑆𝐸𝑅 𖠀 #username .♡
-➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
+➼ : 𝑀𝑆𝐺𝑆 ?? #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 ?? #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
 ➼ : 𝗖𝗛 - ❨@SO_FIR❩ 𓆩𓅄𓆪⤈ .
@@ -18610,7 +18610,7 @@ local Teext =[[
 𓆩𓅄𓆪⤈ ضع⌯ حذف ↫ ترحيب
 𓆩𓅄𓆪⤈ ضع⌯ حذف ↫ قوانين
 𓆩𓅄𓆪⤈ اضف⌯ حذف ↫ صلاحيه
-𓆩𓅄??⤈ الصلاحيات⌯ حذف الصلاحيات
+𓆩????⤈ الصلاحيات⌯ حذف الصلاحيات
 ✪❯─────「𝐹𝐼𝑅𝐸」─────❮✪
 𓆩𓅄𓆪⤈ ضع سبام + العدد
 𓆩𓅄𓆪⤈ ضع تكرار + العدد
