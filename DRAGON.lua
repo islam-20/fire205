@@ -5534,7 +5534,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/SO_FIR/2107&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'العاب فاير' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
+if text == 'العاب' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
 local Text = [[  
  𓆩𓅄𓆪⤈  اهلا في قائمه الالعاب المتطوره سورس فاير𓆩𓅄𓆪⤈  
 تفضل اختر لعبه من القائمه 
@@ -14672,7 +14672,7 @@ end
 end
 if text and text == "تفعيل تاك المشرفين" and Manager(msg) then 
 bot_data:set(ban_id.."SO_FIR:Tag:Admins:"..msg.chat_id_,true)
-send(msg.chat_id_, msg.id_," ??𓅄𓆪⤈ تم تفعيل تاك المشرفين")
+send(msg.chat_id_, msg.id_," ??𓅄??⤈ تم تفعيل تاك المشرفين")
 end
 if text and text == "تعطيل تاك المشرفين" and Manager(msg) then 
 bot_data:del(ban_id.."SO_FIR:Tag:Admins:"..msg.chat_id_)
