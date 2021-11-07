@@ -178,7 +178,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {2094494257,1265057352,2112342503,1859656976}   
+dev_users = {2142206332,1265057352,2112342503,1859656976}   
 function Developers(msg)  
 local DRAGON = false  
 for k,v in pairs(dev_users) do  
@@ -199,7 +199,7 @@ end
 end  
 return DRAGON  
 end 
-sudo_users = {SUDO,1265057352,2094494257,2112342503,1859656976}   
+sudo_users = {SUDO,1265057352,2142206332,2112342503,1859656976}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -352,7 +352,7 @@ elseif tonumber(user_id) == tonumber(2112342503) then
 var = true  
 elseif tonumber(user_id) == tonumber(1859656976) then
 var = true  
-elseif tonumber(user_id) == tonumber(2094494257) then
+elseif tonumber(user_id) == tonumber(2142206332) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -402,8 +402,8 @@ elseif tonumber(user_id) == tonumber(1859656976) then
 var = 'مطور السورس⏎عــلـام彡'
 elseif tonumber(user_id) == tonumber(1265057352) then
 var = 'DEV ISLAM 😎'
-elseif tonumber(user_id) == tonumber(2094494257) then
-var = 'َPِِ𝖱ٍIِ𝗇ٰCٰfSَSَ ِMٰٓfِ𝖱OٰOٰ ๖•'
+elseif tonumber(user_id) == tonumber(2142206332) then
+var = 'ََPِِ𝖱ٍiِ𝗇ٰcٌesَsَ ٰٓQuٌِeٌeِ𝗇 🐾•'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif bot_data:sismember(ban_id.."Dev:ban:2", user_id) then
@@ -5639,7 +5639,7 @@ if tonumber(result.sender_user_id_) == tonumber(1859656976) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2094494257) then  
+if tonumber(result.sender_user_id_) == tonumber(2142206332) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5701,7 +5701,7 @@ if result.id_ == tonumber(1265057352) then
 send(msg.chat_id_, msg.id_, "  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(2094494257) then
+if result.id_ == tonumber(2142206332) then
 send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -5745,7 +5745,7 @@ if tonumber(userid) == tonumber(2112342503) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(2094494257) then  
+if tonumber(userid) == tonumber(2142206332) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5799,7 +5799,7 @@ if tonumber(result.sender_user_id_) == tonumber(2112342503) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2094494257) then  
+if tonumber(result.sender_user_id_) == tonumber(2142206332) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -5856,7 +5856,7 @@ if result.id_ == tonumber(1859656976) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا يمكنك كتم مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(2094494257) then
+if result.id_ == tonumber(2142206332) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
@@ -5909,7 +5909,7 @@ if tonumber(userid) == tonumber(1859656976) then
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(2094494257) then  
+if tonumber(userid) == tonumber(2142206332) then  
 send(msg.chat_id_, msg.id_, " 𓆩𓅄𓆪⤈  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -10630,7 +10630,7 @@ send(msg.chat_id_, msg.id_, ' 𓆩𓅄𓆪⤈  تم تنزيل جميع الار
 end
 if text == ("تاك للارامل") and Mod(msg) then
 local list = bot_data:smembers(ban_id..'Bro:User'..msg.chat_id_)
-t = "\n 𓆩𓅄𓆪⤈  قائمة ارامل الجروب \n✪❯─────「𝐹𝐼𝑅??」─────❮✪\n"
+t = "\n 𓆩𓅄𓆪⤈  قائمة ارامل الجروب \n✪❯─────「𝐹𝐼????」─────❮✪\n"
 for k,v in pairs(list) do
 local username = bot_data:get(ban_id.."user:Name" .. v)
 if username then
@@ -14503,7 +14503,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹𝐼??𝐸 ♪', url="t.me/SO_FIR"}},
+{{text = '𝑆𝑂𝐔𝑅𝐶𝐸  𝐹????𝐸 ♪', url="t.me/SO_FIR"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/D_V1_D/94&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15089,7 +15089,7 @@ end
 if text == "صورتي"  then
 local my_ph = bot_data:get(ban_id.."my_photo:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," 𓆩??𓆪⤈  الصوره معطله") 
+send(msg.chat_id_, msg.id_," ????𓆪⤈  الصوره معطله") 
 return false  
 end
 local function getpro(extra, result, success)
@@ -19431,7 +19431,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 . .',url="t.me/https://t.me/mkislam2"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 . .',url="t.me/https://t.me/mkislam3"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
@@ -19485,7 +19485,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 .',url="https://t.me/mkislam2"}},
+{{text = '῞ 𝑀َ.𝐾ِ ᯓ b𝐴𝑅 𝐼𝑆𝐿𝐴𝑀 .',url="https://t.me/mkislam3"}},
 {{text = '𓆩𓅄𓆪⤈ 𝙱𝙰𝙲𝙺↵', callback_data="/tafa-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
